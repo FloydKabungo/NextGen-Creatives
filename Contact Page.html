@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact - NextGen Creatives</title>
+    <link rel="stylesheet" href="Style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <img src="Assets/Gen.png" alt="NextGen Creatives Logo" class="logo">
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="About Us.html">About Us</a>
+        <a href="Services.html">Services</a>
+        <a href="Portfolio.html">Portfolio</a>
+        <a href="Contact Page.html" class="active">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <p class="intro">Contact Us</p>
+
+    <p class="hero-text">
+        Send us a message to start your website, design,
+        video, or CV project today.
+    </p>
+</section>
+
+<section class="page-section">
+    <div class="contact-grid">
+        <div class="contact-panel">
+            <h2>Get in touch</h2>
+
+            <p>
+                Ready to start your website, design,
+                video, or CV project? Send us the details
+                and we will respond quickly with a clear quote.
+            </p>
+
+            <div class="page-card">
+                <h2>Email</h2>
+                <p>creativesnextgen1@gmail.com</p>
+            </div>
+
+            <div class="page-card">
+                <h2>Phone</h2>
+                <p>+27 66 447 4307</p>
+            </div>
+
+            <div class="page-card">
+                <h2>Office</h2>
+                <p>Available online every day from 10AM - 8PM.</p>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Contact Form</h2>
+
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input id="name" name="name" type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input id="email" name="email" type="email" class="form-control" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="project">Project Type</label>
+
+                    <select id="project" name="title" class="form-control" required>
+                        <option>Website</option>
+                        <option>Graphic Design</option>
+                        <option>Video Editing</option>
+                        <option>CV Creation</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Tell us about your project</label>
+                    <textarea id="message" name="message" class="form-control" rows="6" placeholder="What do you need help with?" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+
+                <p id="form-status"></p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<div class="service-banner">
+    <div class="service-track">
+        <span>WEBSITE DESIGN</span><span>•</span>
+        <span>GRAPHIC DESIGN</span><span>•</span>
+        <span>VIDEO EDITING</span><span>•</span>
+        <span>CV CREATION</span><span>•</span>
+        <span>LOGO DESIGN</span><span>•</span>
+        <span>SOCIAL MEDIA POSTS</span><span>•</span>
+
+        <span>WEBSITE DESIGN</span><span>•</span>
+        <span>GRAPHIC DESIGN</span><span>•</span>
+        <span>VIDEO EDITING</span><span>•</span>
+        <span>CV CREATION</span><span>•</span>
+        <span>LOGO DESIGN</span><span>•</span>
+        <span>SOCIAL MEDIA POSTS</span><span>•</span>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
