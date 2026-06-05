@@ -4,10 +4,20 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg: white;
+    --text: #050505;
+    --accent: #1F5BFF;
+    --accent-dark: #1746D6;
+    --surface: #F8FAFF;
+    --border: #D8DFFF;
+    --muted: #4D4D4D;
+}
+
 body {
     font-family: "Roboto Condensed", sans-serif;
-    background: white;
-    color: black;
+    background: var(--bg);
+    color: var(--text);
     overflow-x: hidden;
 }
 
@@ -45,19 +55,20 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: var(--text);
     font-size: 20px;
     font-weight: 600;
     transition: 0.3s ease;
 }
 
 nav a:hover {
+    color: var(--accent);
     transform: translateY(-4px);
 }
 
 nav a.active {
     font-weight: 900;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid var(--accent);
     padding-bottom: 4px;
 }
 
@@ -91,7 +102,7 @@ nav a.active {
 
 .hero-title span:hover {
     color: transparent;
-    -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 2px var(--accent);
     transform: translateY(-10px);
 }
 
@@ -138,20 +149,22 @@ nav a.active {
 .btn {
     padding: 14px 28px;
     text-decoration: none;
-    border: 2px solid black;
+    border: 2px solid var(--accent);
     font-size: 22px;
     font-weight: 700;
     transition: 0.3s ease;
 }
 
 .btn.black {
-    background: black;
+    background: var(--accent);
     color: white;
+    border-color: var(--accent);
 }
 
 .btn.white {
     background: white;
     color: black;
+    border-color: var(--accent);
 }
 
 .btn:hover {
@@ -165,7 +178,8 @@ nav a.active {
 }
 
 .page-card {
-    border: 1px solid black;
+    border: 1px solid var(--border);
+    background: var(--surface);
     padding: 30px;
     border-radius: 18px;
     margin-top: 25px;
@@ -173,7 +187,7 @@ nav a.active {
 }
 
 .page-card:hover {
-    background: black;
+    background: var(--accent);
     color: white;
     transform: translateY(-5px);
 }
@@ -211,7 +225,7 @@ nav a.active {
     max-width: 900px;
     font-size: 24px;
     line-height: 1.6;
-    color: #555;
+    color: var(--muted);
     margin-bottom: 25px;
 }
 
@@ -252,6 +266,8 @@ nav a.active {
     gap: 90px;
     padding: 90px;
     align-items: center;
+    background: var(--accent);
+    color: white;
 }
 
 .team-images-new {
@@ -269,14 +285,14 @@ nav a.active {
     width: 100%;
     height: 320px;
     object-fit: cover;
-    background: #eee;
+    background: var(--surface);
 }
 
 .team-placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: black;
+    background: var(--accent);
     color: white;
     font-size: 90px;
     font-weight: 900;
@@ -286,11 +302,12 @@ nav a.active {
     margin-top: 15px;
     font-size: 30px;
     font-weight: 900;
+    color: white;
 }
 
 .member-card p {
     font-size: 17px;
-    color: #666;
+    color: white;
     margin-top: 5px;
 }
 
@@ -303,7 +320,7 @@ nav a.active {
 .team-content-new p {
     font-size: 24px;
     line-height: 1.6;
-    color: #555;
+    color: white;
 }
 
 .stats-new {
@@ -315,10 +332,72 @@ nav a.active {
 .stats-new h3 {
     font-size: 55px;
     font-weight: 900;
+    color: white;
 }
 
 .stats-new p {
     font-size: 18px;
+    color: white;
+}
+
+.core-values-section {
+    padding: 90px;
+    margin-top: 60px;
+}
+
+.core-values-section h3 {
+    font-size: 85px;
+    font-weight: 900;
+    margin-bottom: 35px;
+}
+
+.core-values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.core-value-box {
+    position: relative;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 38px 120px 28px 28px;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.core-value-box:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+    border-color: var(--accent);
+}
+
+.core-value-box img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.core-value-box h4 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    font-weight: 900;
+}
+
+.core-value-box p {
+    font-size: 24px;
+    line-height: 1.7;
+    color: var(--muted);
 }
 
 .app-logos {
@@ -380,7 +459,7 @@ nav a.active {
 }
 
 .service-copy {
-    background: #fafafa;
+    background: var(--surface);
     border-radius: 28px;
     padding: 35px;
 }
@@ -394,7 +473,7 @@ nav a.active {
 .service-copy p {
     font-size: 20px;
     line-height: 1.7;
-    color: #333;
+    color: var(--muted);
 }
 
 .service-list {
@@ -462,7 +541,7 @@ nav a.active {
 .portfolio-copy p {
     font-size: 22px;
     line-height: 1.7;
-    color: #222;
+    color: var(--text);
     margin-bottom: 26px;
 }
 
@@ -498,8 +577,8 @@ nav a.active {
 
 .contact-panel,
 .contact-form {
-    background: #f8f8f8;
-    border: 1px solid #ccc;
+    background: var(--surface);
+    border: 1px solid var(--border);
     border-radius: 24px;
     padding: 35px;
 }
@@ -513,7 +592,7 @@ nav a.active {
 .contact-panel p {
     font-size: 18px;
     line-height: 1.8;
-    color: #333;
+    color: var(--muted);
 }
 
 .form-group {
@@ -531,13 +610,13 @@ nav a.active {
 .form-control {
     width: 100%;
     padding: 16px 18px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border);
     border-radius: 14px;
     font-size: 16px;
 }
 
 .submit-btn {
-    background: black;
+    background: var(--accent);
     color: white;
     border: none;
     border-radius: 14px;
@@ -555,7 +634,7 @@ nav a.active {
 
 .service-banner {
     width: 100%;
-    background: black;
+    background: var(--accent);
     overflow: hidden;
     margin-top: 80px;
     padding: 18px 0;
@@ -641,7 +720,8 @@ nav a.active {
 
     .page-section,
     .services-alternate,
-    .portfolio-showcase {
+    .portfolio-showcase,
+    .core-values-section {
         width: 100%;
         padding: 35px 20px;
     }
@@ -685,6 +765,10 @@ nav a.active {
     }
 
     .team-images-new {
+        grid-template-columns: 1fr;
+    }
+
+    .core-values-grid {
         grid-template-columns: 1fr;
     }
 
