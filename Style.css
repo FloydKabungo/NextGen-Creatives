@@ -20,6 +20,57 @@ body {
     color: var(--text);
     overflow-x: hidden;
 }
+    /* Top and bottom decorative backgrounds for all pages.
+       Place your images in the Assets/ folder as `bg-top.png` and `bg-bottom.png`.
+       These are decorative only; they are disabled on small screens. */
+    body {
+        position: relative;
+    }
+
+    body::before,
+    body::after {
+        content: "";
+        position: fixed;
+        left: 0;
+        right: 0;
+        height: 260px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        pointer-events: none;
+        z-index: -1;
+        opacity: 0.98;
+    }
+
+    /* Use a high-res, free abstract background image hosted by Unsplash for crisp rendering.
+       If you prefer a local image, tell me and I'll save it into `Assets/` instead. */
+    body::before {
+        top: 0;
+        background-image: 
+            radial-gradient(circle at 10% 20%, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.0) 35%),
+            radial-gradient(circle at 80% 70%, rgba(255,255,255,0.85) 0%, rgba(200,230,255,0.6) 35%),
+            linear-gradient(135deg, rgba(245,250,255,1) 0%, rgba(225,240,255,1) 50%, rgba(210,235,255,1) 100%);
+        background-size: cover;
+        background-blend-mode: screen;
+        opacity: 0.98;
+    }
+
+    body::after {
+        bottom: 0;
+        background-image: 
+            radial-gradient(circle at 10% 20%, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.0) 35%),
+            radial-gradient(circle at 80% 70%, rgba(255,255,255,0.85) 0%, rgba(200,230,255,0.6) 35%),
+            linear-gradient(315deg, rgba(245,250,255,1) 0%, rgba(225,240,255,1) 50%, rgba(210,235,255,1) 100%);
+        background-size: cover;
+        background-blend-mode: screen;
+        transform: scaleX(-1);
+        opacity: 0.98;
+    }
+
+    @media (max-width: 720px) {
+        body::before,
+        body::after { display: none; }
+    }
 
 header {
     width: 100%;
@@ -32,6 +83,15 @@ header {
     width: 260px;
     cursor: pointer;
     transition: transform 0.3s ease;
+}
+
+/* Ensure the header logo has no white background or box styling */
+.logo {
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    display: inline-block;
 }
 
 .logo:hover {
@@ -253,45 +313,40 @@ nav a.active {
     box-shadow: 0 30px 80px rgba(31,91,255,0.08);
 }
 
-.domain-search {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-    margin-bottom: 24px;
-}
-
-.domain-search input {
-    width: 100%;
-    padding: 18px 22px;
-    border: 1px solid rgba(31,91,255,0.25);
-    border-radius: 14px;
-    font-size: 18px;
-}
-
-.domain-search button {
-    padding: 18px 28px;
-    border: none;
-    border-radius: 14px;
-    background: var(--accent);
-    color: white;
-    font-size: 18px;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-.domain-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.domain-tags span {
+.domain-help-card {
     background: white;
-    border: 1px solid rgba(31,91,255,0.18);
-    border-radius: 999px;
-    padding: 10px 16px;
-    font-weight: 700;
-    color: var(--accent-dark);
+    border-radius: 26px;
+    padding: 40px 32px;
+    max-width: 460px;
+    box-shadow: 0 25px 60px rgba(31,91,255,0.08);
+}
+
+.domain-help-label {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    color: var(--accent);
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+
+.domain-help-card h3 {
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.domain-help-card p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 28px;
+    color: var(--muted);
+}
+
+.pricing-note {
+    margin-top: 28px;
+    font-size: 16px;
+    color: var(--muted);
+    text-align: center;
 }
 
 .why-section,
@@ -419,6 +474,50 @@ nav a.active {
     background: linear-gradient(180deg, rgba(31,91,255,0.12), rgba(255,255,255,0.98));
     border: 1px solid rgba(31,91,255,0.18);
     border-radius: 28px;
+}
+
+.included-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 16px;
+}
+
+.included-card {
+    background: white;
+    border: 1px solid rgba(31,91,255,0.08);
+    border-radius: 18px;
+    padding: 28px;
+    text-align: left;
+    box-shadow: 0 18px 40px rgba(31,91,255,0.04);
+}
+
+.included-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--accent-dark);
+}
+
+.perfect-for {
+    text-align: left;
+    margin-top: 16px;
+}
+
+.perfect-for ul {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0 0;
+}
+
+.perfect-for li {
+    background: #fff;
+    border: 1px solid rgba(31,91,255,0.06);
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-weight: 700;
 }
 
 .testimonials-section {
