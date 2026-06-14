@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
     <loc>https://floydkabungo.github.io/NextGen-Creatives/</loc>
@@ -22,8 +22,12 @@
   </url>
 
   <url>
-    <loc>https://floydkabungo.github.io/NextGen-Creatives/Website%20care%20Page.html</loc>
+    <loc>https://floydkabungo.github.io/NextGen-Creatives/Website%20Care.html</loc>
   </url>
+
+  <url>
+    <loc>https://floydkabungo.github.io/NextGen-Creatives/Performance%20Reports.html</loc>
+</url>
 
   <url>
     <loc>https://floydkabungo.github.io/NextGen-Creatives/Contact%20Page.html</loc>
