@@ -147,12 +147,13 @@ nav a.active {
 }
 
 .btn {
-    padding: 14px 28px;
+    padding: 18px 34px;
     text-decoration: none;
     border: 2px solid var(--accent);
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     transition: 0.3s ease;
+    border-radius: 14px;
 }
 
 .btn.black {
@@ -174,7 +175,7 @@ nav a.active {
 .page-section {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 60px;
+    padding: 100px 20px;
 }
 
 .page-card {
@@ -200,6 +201,346 @@ nav a.active {
 .page-card p {
     font-size: 18px;
     line-height: 1.6;
+}
+
+.care-hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 40px 40px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.care-hero-copy {
+    text-align: left;
+    max-width: 700px;
+}
+
+.hero-small-title {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    color: var(--accent);
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+
+.care-hero h1 {
+    font-size: 68px;
+    line-height: 1.05;
+    margin-bottom: 28px;
+}
+
+.hero-text {
+    max-width: 760px;
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 22px;
+    margin-top: 36px;
+}
+
+.care-hero-panel {
+    background: linear-gradient(180deg, rgba(31,91,255,0.15), rgba(255,255,255,0.85));
+    border: 1px solid rgba(31,91,255,0.2);
+    border-radius: 30px;
+    padding: 34px;
+    box-shadow: 0 30px 80px rgba(31,91,255,0.08);
+}
+
+.domain-search {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.domain-search input {
+    width: 100%;
+    padding: 18px 22px;
+    border: 1px solid rgba(31,91,255,0.25);
+    border-radius: 14px;
+    font-size: 18px;
+}
+
+.domain-search button {
+    padding: 18px 28px;
+    border: none;
+    border-radius: 14px;
+    background: var(--accent);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.domain-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.domain-tags span {
+    background: white;
+    border: 1px solid rgba(31,91,255,0.18);
+    border-radius: 999px;
+    padding: 10px 16px;
+    font-weight: 700;
+    color: var(--accent-dark);
+}
+
+.why-section,
+.pricing-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+.section-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-label {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    color: var(--accent);
+    font-weight: 900;
+    margin-bottom: 18px;
+}
+
+.why-grid,
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.why-card,
+.plan-card {
+    background: white;
+    border: 1px solid rgba(31,91,255,0.14);
+    border-radius: 28px;
+    padding: 32px;
+    box-shadow: 0 20px 50px rgba(31,91,255,0.06);
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.why-card:hover,
+.plan-card:hover,
+.page-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-8px);
+}
+
+.why-card h3,
+.plan-card h3 {
+    font-size: 26px;
+    margin-bottom: 16px;
+}
+
+.why-icon {
+    font-size: 40px;
+    margin-bottom: 18px;
+}
+
+.why-card p,
+.plan-card p,
+.plan-card li {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.plan-price {
+    font-size: 42px;
+    font-weight: 900;
+    margin: 24px 0;
+    color: var(--accent);
+}
+
+.plan-card ul {
+    list-style: none;
+    display: grid;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.plan-card li {
+    position: relative;
+    padding-left: 26px;
+}
+
+.plan-card li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--accent);
+}
+
+.plan-featured {
+    background: linear-gradient(180deg, #1f5bff, #2a76ff);
+    color: white;
+    border-color: transparent;
+    transform: translateY(-10px);
+    min-height: 540px;
+}
+
+.plan-featured .plan-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.12);
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 14px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.plan-featured .plan-price {
+    color: white;
+}
+
+.plan-featured .btn {
+    background: white;
+    color: #1f5bff;
+    border-color: white;
+}
+
+.cta-card {
+    text-align: center;
+    padding: 32px 28px;
+    background: linear-gradient(180deg, rgba(31,91,255,0.12), rgba(255,255,255,0.98));
+    border: 1px solid rgba(31,91,255,0.18);
+    border-radius: 28px;
+}
+
+.testimonials-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+.testimonial-card {
+    background: white;
+    border: 1px solid rgba(31,91,255,0.14);
+    border-radius: 28px;
+    padding: 40px 36px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(31,91,255,0.08);
+}
+
+.testimonial-stars {
+    font-size: 26px;
+    margin: 18px 0;
+}
+
+.testimonial-quote {
+    font-size: 20px;
+    line-height: 1.8;
+    color: var(--muted);
+    margin-bottom: 18px;
+}
+
+.testimonial-author {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.final-cta-banner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    background: var(--accent);
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    color: white;
+    margin-top: 40px;
+}
+
+.final-cta-banner h2 {
+    font-size: 38px;
+    margin-bottom: 16px;
+}
+
+.final-cta-banner p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 700px;
+}
+
+.final-cta-banner .btn.black {
+    background: white;
+    color: var(--accent);
+    border-color: white;
+}
+
+.final-cta-banner .btn.black:hover {
+    background: white;
+    opacity: 0.95;
+}
+
+.cta-card h2 {
+    font-size: 34px;
+    margin-bottom: 18px;
+}
+
+.cta-card p {
+    font-size: 18px;
+    color: var(--muted);
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.cta-card .btn {
+    padding: 16px 36px;
+}
+
+@media (max-width: 1000px) {
+    .care-hero {
+        grid-template-columns: 1fr;
+        padding: 60px 24px 40px;
+    }
+
+    .care-hero h1 {
+        font-size: 58px;
+    }
+
+    .why-grid,
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-section,
+    .why-section,
+    .pricing-section {
+        padding: 40px 24px;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .domain-search {
+        flex-direction: column;
+    }
+
+    .domain-search button,
+    .domain-search input {
+        width: 100%;
+    }
 }
 
 .about-layout {
