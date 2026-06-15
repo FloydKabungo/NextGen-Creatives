@@ -1,36 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url>
-    <loc>https://floydkabungo.github.io/NextGen-Creatives/</loc>
-  </url>
-
-  <url>
-    <loc>https://floydkabungo.github.io/NextGen-Creatives/index.html</loc>
-  </url>
-
-  <url>
-    <loc>https://floydkabungo.github.io/NextGen-Creatives/About%20Us.html</loc>
-  </url>
-
-  <url>
-    <loc>https://floydkabungo.github.io/NextGen-Creatives/Services.html</loc>
-  </url>
-
-  <url>
-    <loc>https://floydkabungo.github.io/NextGen-Creatives/Portfolio.html</loc>
-  </url>
-
-  <url>
-    <loc>https://floydkabungo.github.io/NextGen-Creatives/Website%20Care.html</loc>
-  </url>
-
-  <url>
-    <loc>https://floydkabungo.github.io/NextGen-Creatives/Performance%20Reports.html</loc>
+ <url>
+  <loc>https://nextgencreatives.net.za/</loc>
 </url>
 
-  <url>
-    <loc>https://floydkabungo.github.io/NextGen-Creatives/Contact%20Page.html</loc>
-  </url>
+<url>
+  <loc>https://nextgencreatives.net.za/index.html</loc>
+</url>
 
-</urlset>
+<url>
+  <loc>https://nextgencreatives.net.za/About%20Us.html</loc>
+</url>
+
+<url>
+  <loc>https://nextgencreatives.net.za/Services.html</loc>
+</url>
+
+<url>
+  <loc>https://nextgencreatives.net.za/Portfolio.html</loc>
+</url>
+
+<url>
+  <loc>https://nextgencreatives.net.za/Website%20Management.html</loc>
+</url>
+
+<url>
+  <loc>https://nextgencreatives.net.za/Performance%20Reports.html</loc>
+</url>
+
+<url>
+  <loc>https://nextgencreatives.net.za/Contact%20Page.html</loc>
+</url>

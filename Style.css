@@ -25,6 +25,12 @@ body {
     color: var(--text);
     overflow-x: hidden;
     position: relative;
+    opacity: 1;
+    transition: opacity 0.45s ease;
+}
+
+body.fade-out {
+    opacity: 0;
 }
     /* Top and bottom decorative backgrounds for all pages.
        Place your images in the Assets/ folder as `bg-top.png` and `bg-bottom.png`.
@@ -82,10 +88,18 @@ header {
     align-items: center;
 }
 
+.logo-link {
+    display: inline-block;
+}
+
 .logo {
     width: 260px;
     cursor: pointer;
     transition: transform 0.3s ease;
+}
+
+.logo-link:hover .logo {
+    transform: scale(1.02);
 }
 
 /* Ensure the header logo has no white background or box styling */
@@ -200,7 +214,7 @@ nav a.active {
 
 @keyframes scrollImages {
     from { transform: translateX(0); }
-    to { transform: translateX(calc(-405px * 5)); }
+    to { transform: translateX(-2000px); }
 }
 
 .buttons {
