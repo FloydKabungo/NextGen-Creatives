@@ -1,3 +1,8 @@
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -19,13 +24,11 @@ body {
     background: var(--bg);
     color: var(--text);
     overflow-x: hidden;
+    position: relative;
 }
     /* Top and bottom decorative backgrounds for all pages.
        Place your images in the Assets/ folder as `bg-top.png` and `bg-bottom.png`.
        These are decorative only; they are disabled on small screens. */
-    body {
-        position: relative;
-    }
 
     body::before,
     body::after {
@@ -1375,6 +1378,40 @@ nav a.active {
 .final-cta-banner .cta-buttons .btn {
     padding: 16px 32px;
     font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .hero,
+    .page-section,
+    .pricing-section,
+    .included-section,
+    .cta-section {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .pricing-cards,
+    .included-grid,
+    .perfect-grid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .pricing-card,
+    .included-card,
+    .perfect-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 @media (max-width: 900px) {
