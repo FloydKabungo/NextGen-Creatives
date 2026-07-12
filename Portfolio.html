@@ -1,33 +1,40 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Portfolio - NextGen Creatives</title>
     <link rel="stylesheet" href="Style.css">
     <link rel="icon" type="image/png" href="Assets/Gen.png">
-<link rel="apple-touch-icon" href="Assets/Gen.png">
+    <link rel="apple-touch-icon" href="Assets/Gen.png">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore selected website, graphic design, video editing, branding and CV projects by NextGen Creatives.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVE3HM8TDV"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-ZVE3HM8TDV');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVE3HM8TDV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZVE3HM8TDV');
+    </script>
 </head>
 
-<body>
+<body class="portfolio-page">
+<header class="site-header">
+    <a href="index.html" class="logo-link" aria-label="NextGen Creatives home">
+        <img src="Assets/Gen.png" alt="NextGen Creatives Logo" class="logo">
+    </a>
 
-<header>
-    <a href="index.html" class="logo-link"><img src="Assets/Gen.png" alt="NextGen Creatives Logo" class="logo"></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+    </button>
 
-    <nav>
+    <nav class="site-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="About Us.html">About Us</a>
         <a href="Services.html">Services</a>
@@ -37,77 +44,169 @@ gtag('config', 'G-ZVE3HM8TDV');
     </nav>
 </header>
 
-<section class="hero">
-    <p class="intro">Our Portfolio</p>
-
-    <p class="hero-text">
-        A collection of websites, hosting and maintenance-ready projects,
-        graphics, videos, and branding created by NextGen Creatives.
-    </p>
-</section>
-
-<section class="portfolio-showcase">
-    <div class="portfolio-item">
-        <div class="portfolio-media">
-            <video autoplay muted loop playsinline controls>
-                <source src="PORTFOLIO/FINAL PRODUCT.mp4" type="video/mp4">
-            </video>
-        </div>
-
-        <div class="portfolio-copy">
-            <h2>Upcoming Magazine Promotion</h2>
-
-            <p>
-                A promotional video created for an upcoming magazine release.
-                We handled the editing, motion graphics, transitions, and visual
-                storytelling to create an engaging preview that highlights the
-                magazine's creative identity and modern design.
+<main>
+    <section class="portfolio-hero" aria-labelledby="portfolio-title">
+        <div class="portfolio-hero-copy">
+            <p class="portfolio-eyebrow">Our Portfolio</p>
+            <h1 id="portfolio-title">Ideas. Crafted.<br><span>Results Delivered.</span></h1>
+            <p class="portfolio-lead">
+                Explore a selection of websites, graphic design, video editing,
+                branding, and CV creation projects crafted for clients who value
+                creativity and performance.
             </p>
 
-            <ul>
-                <li>Video editing</li>
-                <li>Motion graphics</li>
-                <li>Visual storytelling</li>
-                <li>Magazine promotion</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="portfolio-item reverse">
-        <div class="portfolio-copy">
-            <h2>Professional CV Creation</h2>
-
-            <p>
-                A clean and professional CV design created to help clients present
-                their skills, education, and experience clearly.
-            </p>
-
-            <ul>
-                <li>Modern CV layout</li>
-                <li>Clear skills section</li>
-                <li>Professional structure</li>
-                <li>Job-ready presentation</li>
-            </ul>
+            <div class="portfolio-benefits" aria-label="Our approach">
+                <div class="portfolio-benefit">
+                    <span class="benefit-icon">✦</span>
+                    <span><strong>Creative Solutions</strong><small>Tailored to your goals</small></span>
+                </div>
+                <div class="portfolio-benefit">
+                    <span class="benefit-icon">◎</span>
+                    <span><strong>Quality &amp; Impact</strong><small>Designs that deliver results</small></span>
+                </div>
+            </div>
         </div>
 
-        <div class="portfolio-media cv-holder">
-            <img src="PORTFOLIO/CV_page.jpg" alt="CV Creation Project" class="cv-a4">
+        <div class="portfolio-hero-visual" aria-hidden="true">
+            <div class="hero-orbit hero-orbit-one"></div>
+            <div class="hero-orbit hero-orbit-two"></div>
+            <div class="desktop-preview">
+                <div class="preview-topbar">
+                    <strong>NextGen.</strong>
+                    <span>☰</span>
+                </div>
+                <div class="preview-content">
+                    <p>Modern Solutions</p>
+                    <h2>Real Results</h2>
+                    <span>Creative websites and visual design built to help brands grow.</span>
+                    <b>See Our Work →</b>
+                </div>
+                <div class="preview-blocks">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+
+            <div class="mobile-preview">
+                <div class="mobile-speaker"></div>
+                <strong>NextGen.</strong>
+                <p>Creative.<br>Design.<br>Smart.<br><span>Solutions.</span></p>
+                <b>Get in Touch →</b>
+                <div class="mobile-nav"><i></i><i></i><i></i><i></i></div>
+            </div>
         </div>
+    </section>
+
+    <section class="portfolio-projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading" class="sr-only">Selected projects</h2>
+
+        <div class="portfolio-filters" role="group" aria-label="Filter portfolio projects">
+            <button class="portfolio-filter active" type="button" data-filter="all">All</button>
+            <button class="portfolio-filter" type="button" data-filter="websites">Websites</button>
+            <button class="portfolio-filter" type="button" data-filter="video-editing">Video Editing</button>
+            <button class="portfolio-filter" type="button" data-filter="cv-creation">CV Creation</button>
+        </div>
+
+        <div class="portfolio-grid">
+            <article class="project-card" data-category="video-editing">
+                <div class="project-visual magazine-visual">
+                    <video autoplay muted loop playsinline preload="metadata" poster="">
+                        <source src="PORTFOLIO/FINAL PRODUCT.mp4" type="video/mp4">
+                    </video>
+                    <div class="magazine-overlay">COMING<br>SOON</div>
+                    <span class="play-badge">▶</span>
+                </div>
+                <div class="project-card-body">
+                    <span class="project-tag tag-video">Video Editing</span>
+                    <h3>Upcoming Magazine Promotion</h3>
+                    <p>A promotional video created for an upcoming magazine release, including editing, motion graphics, and final production.</p>
+                    <a href="PORTFOLIO/FINAL PRODUCT.mp4" target="_blank" rel="noopener">View Project <span>→</span></a>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="cv-creation">
+                <div class="project-visual cv-visual">
+                    <img src="PORTFOLIO/CV_page.jpg" alt="Professional CV design project">
+                </div>
+                <div class="project-card-body">
+                    <span class="project-tag tag-cv">CV Creation</span>
+                    <h3>Professional CV Creation</h3>
+                    <p>A clean, professional CV design that presents skills, education, and experience clearly and confidently.</p>
+                    <a href="PORTFOLIO/CV_page.jpg" target="_blank" rel="noopener">View Project <span>→</span></a>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="websites">
+                <div class="project-visual fmsa-live-visual">
+                    <img
+                        src="PORTFOLIO/FMSA-homepage.png"
+                        alt="FREEBASE Multi Sector Africa website homepage"
+                        loading="lazy">
+                </div>
+                <div class="project-card-body">
+                    <span class="project-tag tag-web">Websites</span>
+                    <h3>FREEBASE Multi Sector Africa</h3>
+                    <p>A responsive corporate website presenting FMSA's engineering, mining, construction, equipment, property, and surveying services.</p>
+                    <a href="https://floydkabungo.github.io/FREEBASE-MULTI-SECTOR-AFRICA-PTY-LTD/" target="_blank" rel="noopener noreferrer">View Live Website <span>→</span></a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="portfolio-cta" aria-labelledby="portfolio-cta-title">
+        <div>
+            <p>✦ Ready to get started?</p>
+            <h2 id="portfolio-cta-title">Let’s build your next project</h2>
+            <span>Have a project in mind? We would love to help bring your ideas to life with creativity and precision.</span>
+        </div>
+        <a href="Contact Page.html" class="portfolio-cta-button">Get in Touch <b>→</b></a>
+        <div class="rocket-art" aria-hidden="true">🚀<i></i><i></i><i></i></div>
+    </section>
+</main>
+
+<footer class="portfolio-footer">
+    <div class="footer-brand">
+        <img src="Assets/Gen.png" alt="NextGen Creatives">
+        <p>NextGen Creatives helps businesses stand out with modern design, engaging content, and smart solutions.</p>
     </div>
 
-
-</section>
-
-<div class="service-banner">
-    <div class="service-track">
-        <span>WEBSITE DESIGN</span><span>•</span>
-        <span>GRAPHIC DESIGN</span><span>•</span>
-        <span>VIDEO EDITING</span><span>•</span>
-        <span>CV CREATION</span><span>•</span>
-        <span>LOGO DESIGN</span><span>•</span>
-        <span>SOCIAL MEDIA POSTS</span><span>•</span>
+    <div class="footer-column">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="About Us.html">About Us</a>
+        <a href="Services.html">Services</a>
+        <a href="Portfolio.html">Portfolio</a>
+        <a href="Contact Page.html">Contact</a>
     </div>
-</div>
+
+    <div class="footer-column">
+        <h3>Services</h3>
+        <a href="Services.html">Web Design</a>
+        <a href="Services.html">Graphic Design</a>
+        <a href="Services.html">Video Editing</a>
+        <a href="Services.html">CV Creation</a>
+        <a href="Website Management.html">Website Management</a>
+    </div>
+
+    <div class="footer-column">
+        <h3>More</h3>
+        <a href="About Us.html">Our Process</a>
+        <a href="About Us.html">About the Team</a>
+        <a href="Contact Page.html">Get a Quote</a>
+        <a href="Contact Page.html">Contact Support</a>
+    </div>
+
+    <div class="footer-column footer-social">
+        <h3>Follow Us</h3>
+        <div class="social-links" aria-label="Social links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">◎</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="YouTube">▶</a>
+        </div>
+        <p>© 2026 NextGen Creatives.<br>All rights reserved.</p>
+    </div>
+</footer>
 
 <script src="script.js"></script>
 </body>

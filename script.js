@@ -54,3 +54,57 @@ if (contactForm) {
         });
     });
 }
+// Portfolio page interactions
+(function () {
+    const menuToggle = document.querySelector('.portfolio-page .menu-toggle');
+    const siteNav = document.querySelector('.portfolio-page .site-nav');
+
+    if (menuToggle && siteNav) {
+        menuToggle.addEventListener('click', function () {
+            const isOpen = siteNav.classList.toggle('is-open');
+            menuToggle.setAttribute('aria-expanded', String(isOpen));
+            menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+        });
+
+        siteNav.addEventListener('click', function (event) {
+            if (event.target.closest('a')) {
+                siteNav.classList.remove('is-open');
+                menuToggle.setAttribute('aria-expanded', 'false');
+                menuToggle.setAttribute('aria-label', 'Open navigation');
+            }
+        });
+
+        window.addEventListener('resize', function () {
+            if (window.innerWidth > 900) {
+                siteNav.classList.remove('is-open');
+                menuToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    }
+
+    const filterButtons = document.querySelectorAll('.portfolio-page .portfolio-filter');
+    const projectCards = document.querySelectorAll('.portfolio-page .project-card');
+
+    if (filterButtons.length && projectCards.length) {
+        filterButtons.forEach(function (button) {
+            button.addEventListener('click', function () {
+                const selectedFilter = button.dataset.filter;
+
+                filterButtons.forEach(function (item) {
+                    item.classList.remove('active');
+                    item.setAttribute('aria-pressed', 'false');
+                });
+
+                button.classList.add('active');
+                button.setAttribute('aria-pressed', 'true');
+
+                projectCards.forEach(function (card) {
+                    const matches = selectedFilter === 'all' || card.dataset.category === selectedFilter;
+                    card.classList.toggle('is-hidden', !matches);
+                });
+            });
+        });
+
+        filterButtons[0].setAttribute('aria-pressed', 'true');
+    }
+})();
