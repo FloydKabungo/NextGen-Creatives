@@ -37,29 +37,68 @@ if (contactForm) {
     contactForm.addEventListener("submit", function(event) {
         event.preventDefault();
 
-        formStatus.textContent = "Sending message...";
+        if (!formStatus) return;
 
-        emailjs.sendForm(
+        if (typeof emailjs === "undefined" || !emailjs.send) {
+            formStatus.textContent = "Email service is unavailable. Please contact us by email or phone.";
+            return;
+        }
+
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+        const nameField = document.getElementById("name");
+        const emailField = document.getElementById("email");
+        const phoneField = document.getElementById("phone");
+        const projectField = document.getElementById("project");
+        const budgetField = document.getElementById("budget");
+        const messageField = document.getElementById("message");
+
+        const phone = phoneField && phoneField.value.trim()
+            ? phoneField.value.trim()
+            : "Not provided";
+        const budget = budgetField && budgetField.value.trim()
+            ? budgetField.value.trim()
+            : "Not specified";
+
+        const templateParams = {
+            name: nameField ? nameField.value.trim() : "",
+            email: emailField ? emailField.value.trim() : "",
+            title: projectField ? projectField.value : "General Enquiry",
+            message: [
+                messageField ? messageField.value.trim() : "",
+                "",
+                "Phone: " + phone,
+                "Estimated budget: " + budget
+            ].join("\n")
+        };
+
+        formStatus.textContent = "Sending message...";
+        if (submitButton) submitButton.disabled = true;
+
+        emailjs.send(
             "service_r3rqpyp",
             "template_407jnoh",
-            contactForm
+            templateParams
         )
         .then(() => {
             formStatus.textContent = "Message sent successfully!";
             contactForm.reset();
         })
         .catch((error) => {
-            formStatus.textContent = "Failed to send message.";
+            formStatus.textContent = "Failed to send message. Please try again.";
             console.error(error);
+        })
+        .finally(() => {
+            if (submitButton) submitButton.disabled = false;
         });
     });
 }
-// Portfolio page interactions
-(function () {
-    const menuToggle = document.querySelector('.portfolio-page .menu-toggle');
-    const siteNav = document.querySelector('.portfolio-page .site-nav');
 
-    if (menuToggle && siteNav) {
+(function () {
+    const pageScope = document.querySelector('.home-page, .portfolio-page, .services-page, .about-page, .management-page, .contact-page');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const siteNav = document.querySelector('.site-nav');
+
+    if (pageScope && menuToggle && siteNav) {
         menuToggle.addEventListener('click', function () {
             const isOpen = siteNav.classList.toggle('is-open');
             menuToggle.setAttribute('aria-expanded', String(isOpen));

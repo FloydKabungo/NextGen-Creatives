@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Contact - NextGen Creatives</title>
@@ -8,26 +8,32 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact NextGen Creatives for websites, graphic design, video editing, CV creation, branding, website management, and hosting.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVE3HM8TDV"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-ZVE3HM8TDV');
-</script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVE3HM8TDV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZVE3HM8TDV');
+    </script>
 </head>
 
-<body>
+<body class="contact-page">
+<header class="site-header">
+    <a href="index.html" class="logo-link" aria-label="NextGen Creatives home">
+        <img src="Assets/Gen.png" alt="NextGen Creatives Logo" class="logo">
+    </a>
 
-<header>
-    <a href="index.html" class="logo-link"><img src="Assets/Gen.png" alt="NextGen Creatives Logo" class="logo"></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+    </button>
 
-    <nav>
+    <nav class="site-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="About Us.html">About Us</a>
         <a href="Services.html">Services</a>
@@ -37,94 +43,256 @@ gtag('config', 'G-ZVE3HM8TDV');
     </nav>
 </header>
 
-<section class="hero">
-    <p class="intro">Contact Us</p>
-
-    <p class="hero-text">
-        Send us a message to start your website, hosting, maintenance,
-        design, video, or CV project today.
-    </p>
-</section>
-
-<section class="page-section">
-    <div class="contact-grid">
-        <div class="contact-panel">
-            <h2>Get in touch</h2>
-
-            <p>
-                Ready to start your website, hosting, maintenance,
-                design, video, or CV project? Send us the details
-                and we will respond quickly with a clear quote.
+<main>
+    <section class="contact-hero" aria-labelledby="contact-title">
+        <div class="contact-hero-copy">
+            <p class="contact-eyebrow">Let’s Work Together</p>
+            <h1 id="contact-title">Have An Idea?<br><span>Let’s Bring It To Life.</span></h1>
+            <p class="contact-lead">
+                Tell us what you need and we’ll help you choose the right creative solution.
+                Whether it’s a website, graphic design, video, CV, branding, management, or hosting,
+                we’re ready to build it with you.
             </p>
 
-            <div class="page-card">
-                <h2>Email</h2>
-                <p>creativesnextgen1@gmail.com</p>
-            </div>
-
-            <div class="page-card">
-                <h2>Phone</h2>
-                <p>+27 66 447 4307</p>
-            </div>
-
-            <div class="page-card">
-                <h2>Office</h2>
-                <p>Available online every day from 10AM - 8PM.</p>
+            <div class="contact-hero-points" aria-label="Contact benefits">
+                <div class="contact-hero-point">
+                    <span>✓</span>
+                    <div><strong>Clear Communication</strong><small>Direct support from our two-person team.</small></div>
+                </div>
+                <div class="contact-hero-point">
+                    <span>✓</span>
+                    <div><strong>Simple Process</strong><small>Send your details and receive a clear next step.</small></div>
+                </div>
             </div>
         </div>
 
-        <div class="contact-form">
-            <h2>Contact Form</h2>
+        <div class="contact-hero-art" aria-hidden="true">
+            <div class="contact-orbit contact-orbit-one"></div>
+            <div class="contact-orbit contact-orbit-two"></div>
+            <div class="contact-dots"></div>
 
-            <form id="contact-form">
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input id="name" name="name" type="text" class="form-control" placeholder="Your Name" required>
+            <div class="contact-message-card">
+                <div class="message-card-top">
+                    <div class="message-avatar">NG</div>
+                    <div>
+                        <strong>NextGen Creatives</strong>
+                        <span>Usually replies quickly</span>
+                    </div>
+                    <i></i>
+                </div>
+                <div class="message-bubble message-bubble-left">
+                    Hi! Tell us about your project.
+                </div>
+                <div class="message-bubble message-bubble-right">
+                    I need a modern business website.
+                </div>
+                <div class="message-input">
+                    <span>Type your message...</span>
+                    <b>➤</b>
+                </div>
+            </div>
+
+            <div class="floating-contact-card floating-email-card">
+                <span class="floating-contact-icon">✉</span>
+                <div><small>Email Us</small><strong>Start your project</strong></div>
+            </div>
+
+            <div class="floating-contact-card floating-reply-card">
+                <span class="floating-contact-icon">⚡</span>
+                <div><small>Fast Response</small><strong>Clear next steps</strong></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" aria-labelledby="contact-form-title">
+        <div class="contact-info-panel">
+            <p class="section-eyebrow">Contact Details</p>
+            <h2>Let’s start the conversation.</h2>
+            <p class="contact-info-intro">
+                Share the details of your project and we’ll respond with guidance,
+                availability, and a clear quote where possible.
+            </p>
+
+            <div class="contact-detail-grid">
+                <article class="contact-detail-card">
+                    <span class="contact-detail-icon">✉</span>
+                    <div>
+                        <small>Email</small>
+                        <a href="mailto:hello@nextgencreatives.com">hello@nextgencreatives.com</a>
+                        <p>Send project details at any time.</p>
+                    </div>
+                </article>
+
+                <article class="contact-detail-card">
+                    <span class="contact-detail-icon">☎</span>
+                    <div>
+                        <small>Phone</small>
+                        <a href="tel:+27765716341">+27 76 571 6341</a>
+                        <p>Call or message us for assistance.</p>
+                    </div>
+                </article>
+
+                <article class="contact-detail-card">
+                    <span class="contact-detail-icon">◷</span>
+                    <div>
+                        <small>Availability</small>
+                        <strong>Daily, 10:00–20:00</strong>
+                        <p>Online support for enquiries and projects.</p>
+                    </div>
+                </article>
+
+                <article class="contact-detail-card">
+                    <span class="contact-detail-icon">◎</span>
+                    <div>
+                        <small>Instagram</small>
+                        <a href="https://www.instagram.com/nextgencreatives.za/" target="_blank" rel="noopener noreferrer">@nextgencreatives.za</a>
+                        <p>Follow our work and latest updates.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="contact-trust-note">
+                <span>✦</span>
+                <p><strong>Two creatives. One clear point of contact.</strong><br>You communicate directly with the team working on your project.</p>
+            </div>
+        </div>
+
+        <div class="contact-form-panel">
+            <div class="contact-form-heading">
+                <p class="section-eyebrow">Send A Message</p>
+                <h2 id="contact-form-title">Tell us about your project.</h2>
+                <p>Complete the form below and we’ll get back to you as soon as possible.</p>
+            </div>
+
+            <form id="contact-form" class="contact-form-redesign">
+                <div class="contact-form-grid">
+                    <div class="contact-field">
+                        <label for="name">Full name</label>
+                        <input id="name" name="name" type="text" placeholder="Your full name" autocomplete="name" required>
+                    </div>
+
+                    <div class="contact-field">
+                        <label for="email">Email address</label>
+                        <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+                    </div>
+
+                    <div class="contact-field">
+                        <label for="phone">Phone number <span>(optional)</span></label>
+                        <input id="phone" name="phone" type="tel" placeholder="+27..." autocomplete="tel">
+                    </div>
+
+                    <div class="contact-field">
+                        <label for="project">Project type</label>
+                        <select id="project" name="title" required>
+                            <option value="" selected disabled>Select a service</option>
+                            <option>Website Design</option>
+                            <option>Graphic Design</option>
+                            <option>Video Editing</option>
+                            <option>CV Creation</option>
+                            <option>Branding</option>
+                            <option>Website Management & Hosting</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="contact-field contact-field-full">
+                        <label for="budget">Estimated budget <span>(optional)</span></label>
+                        <select id="budget" name="budget">
+                            <option value="" selected>Not sure yet</option>
+                            <option>Under R2,500</option>
+                            <option>R2,500 – R5,000</option>
+                            <option>R5,000 – R10,000</option>
+                            <option>R10,000+</option>
+                        </select>
+                    </div>
+
+                    <div class="contact-field contact-field-full">
+                        <label for="message">Tell us about your project</label>
+                        <textarea id="message" name="message" rows="7" placeholder="What do you need, when do you need it, and what result are you looking for?" required></textarea>
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input id="email" name="email" type="email" class="form-control" placeholder="you@example.com" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="project">Project Type</label>
-
-                    <select id="project" name="title" class="form-control" required>
-                        <option>Website</option>
-                        <option>Hosting & Maintenance</option>
-                        <option>Graphic Design</option>
-                        <option>Video Editing</option>
-                        <option>CV Creation</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Tell us about your project</label>
-                    <textarea id="message" name="message" class="form-control" rows="6" placeholder="What do you need help with?" required></textarea>
-                </div>
-
-                <button type="submit" class="submit-btn">Send Message</button>
-
-                <p id="form-status"></p>
+                <button type="submit" class="contact-submit-button">
+                    Send Message <span>→</span>
+                </button>
+                <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
             </form>
         </div>
-    </div>
-</section>
+    </section>
 
-<div class="service-banner">
-    <div class="service-track">
-        <span>WEBSITE DESIGN</span><span>•</span>
-        <span>GRAPHIC DESIGN</span><span>•</span>
-        <span>VIDEO EDITING</span><span>•</span>
-        <span>CV CREATION</span><span>•</span>
-        <span>LOGO DESIGN</span><span>•</span>
-        <span>SOCIAL MEDIA POSTS</span><span>•</span>
+    <section class="contact-process" aria-labelledby="contact-process-title">
+        <div class="contact-process-heading">
+            <p class="section-eyebrow">What Happens Next?</p>
+            <h2 id="contact-process-title">A simple start to your project.</h2>
+        </div>
+
+        <div class="contact-process-steps">
+            <article>
+                <span>1</span>
+                <div><h3>You send the details</h3><p>Tell us what you need using the contact form.</p></div>
+            </article>
+            <article>
+                <span>2</span>
+                <div><h3>We review your request</h3><p>We check the scope, requirements, and best solution.</p></div>
+            </article>
+            <article>
+                <span>3</span>
+                <div><h3>We reply with next steps</h3><p>You receive guidance, availability, and pricing information.</p></div>
+            </article>
+        </div>
+    </section>
+
+    <section class="contact-cta" aria-labelledby="contact-cta-title">
+        <div>
+            <p>✦ Ready when you are</p>
+            <h2 id="contact-cta-title">Let’s create something that gets noticed.</h2>
+            <span>Start with a message. We’ll help you take the next step.</span>
+        </div>
+        <a href="#contact-form" class="contact-cta-button">Start Your Project <b>→</b></a>
+        <div class="contact-cta-art" aria-hidden="true">✉<i></i><i></i><i></i></div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-brand">
+        <img src="Assets/Gen.png" alt="NextGen Creatives">
+        <p>NextGen Creatives helps businesses stand out with modern design, engaging content, and smart digital solutions.</p>
     </div>
-</div>
+
+    <div class="footer-column">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="About Us.html">About Us</a>
+        <a href="Services.html">Services</a>
+        <a href="Portfolio.html">Portfolio</a>
+        <a href="Contact Page.html">Contact</a>
+    </div>
+
+    <div class="footer-column">
+        <h3>Services</h3>
+        <a href="Services.html">Web Design</a>
+        <a href="Services.html">Graphic Design</a>
+        <a href="Services.html">Video Editing</a>
+        <a href="Services.html">CV Creation</a>
+        <a href="Website Management.html">Website Management</a>
+    </div>
+
+    <div class="footer-column footer-social">
+        <h3>Follow Us</h3>
+        <div class="social-links" aria-label="Social links">
+            <a href="https://www.instagram.com/nextgencreatives.za/" target="_blank" rel="noopener noreferrer" aria-label="Follow NextGen Creatives on Instagram" title="Instagram">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <circle cx="17.4" cy="6.6" r="1"></circle>
+                </svg>
+            </a>
+        </div>
+        <p>© 2026 NextGen Creatives.<br>All rights reserved.</p>
+    </div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="script.js"></script>
-
 </body>
 </html>

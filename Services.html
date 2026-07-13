@@ -1,33 +1,38 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Services - NextGen Creatives</title>
     <link rel="stylesheet" href="Style.css">
     <link rel="icon" type="image/png" href="Assets/Gen.png">
-<link rel="apple-touch-icon" href="Assets/Gen.png">
+    <link rel="apple-touch-icon" href="Assets/Gen.png">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore modern web design, graphic design, video editing, CV creation, website management, and hosting services by NextGen Creatives.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVE3HM8TDV"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-ZVE3HM8TDV');
-</script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVE3HM8TDV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZVE3HM8TDV');
+    </script>
 </head>
+<body class="services-page">
+<header class="site-header">
+    <a href="index.html" class="logo-link" aria-label="NextGen Creatives home">
+        <img src="Assets/Gen.png" alt="NextGen Creatives Logo" class="logo">
+    </a>
 
-<body>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+    </button>
 
-<header>
-    <a href="index.html" class="logo-link"><img src="Assets/Gen.png" alt="NextGen Creatives Logo" class="logo"></a>
-
-    <nav>
+    <nav class="site-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="About Us.html">About Us</a>
         <a href="Services.html" class="active">Services</a>
@@ -37,183 +42,289 @@ gtag('config', 'G-ZVE3HM8TDV');
     </nav>
 </header>
 
-<section class="hero">
-    <p class="intro">Our Services</p>
+<main>
+    <section class="services-hero" aria-labelledby="services-title">
+        <div class="services-hero-copy">
+            <p class="services-eyebrow">Our Services</p>
+            <h1 id="services-title">Creative Services.<br><span>Built For Growth.</span></h1>
+            <p class="services-lead">
+                NextGen Creatives helps businesses, students, and creators stand out with modern,
+                results-driven solutions across web design, graphic design, video editing,
+                CV creation, website management, and hosting support.
+            </p>
 
-    <p class="hero-text">
-        Everything you need to build your brand, website,
-        content, and professional image online.
-    </p>
-</section>
-
-<section class="app-logos">
-    <div class="logo-slider">
-        <div class="slider-track">
-            <img src="APPS/CapCut.jpg" alt="CapCut">
-            <img src="APPS/Html, Css, Java.jpg" alt="HTML CSS JS">
-            <img src="APPS/FIGMA.jpg" alt="Figma">
-            <img src="APPS/CANVA.jpg" alt="Canva">
-            <img src="APPS/Adobe Animate.jpg" alt="Animate">
-            <img src="APPS/Adobe Dreamweaver.jpg" alt="Dreamweaver">
-            <img src="APPS/Adobe InDesign.jpg" alt="InDesign">
-            <img src="APPS/Adobe After Effect.jpg" alt="After Effects">
-            <img src="APPS/Adobe Illustrator.jpg" alt="Illustrator">
-            <img src="APPS/Adobe Premiere.jpg" alt="Premiere">
-            <img src="APPS/Adobe Photoshop.jpg" alt="Photoshop">
-        </div>
-    </div>
-</section>
-
-<section class="services-alternate">
-    <div class="service-item">
-        <div class="service-inner">
-            <div class="service-image">
-                <img src="Service Img/1.jpg" alt="Website Design">
-            </div>
-
-            <div class="service-copy">
-                <h2>Website Design</h2>
-
-                <p>
-                    Modern websites built for students, creators, and businesses.
-                </p>
-
-                <ul class="service-list">
-                    <li>Landing Pages</li>
-                    <li>Portfolio Websites</li>
-                    <li>Business Websites</li>
-                    <li>Responsive Design</li>
-                </ul>
+            <div class="services-benefits" aria-label="Our service benefits">
+                <div class="services-benefit">
+                    <span class="benefit-icon">✦</span>
+                    <span><strong>Tailored Solutions</strong><small>Built around your goals and audience</small></span>
+                </div>
+                <div class="services-benefit">
+                    <span class="benefit-icon">◎</span>
+                    <span><strong>Creative Impact</strong><small>Designs that engage and convert</small></span>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="service-item right">
-        <div class="service-inner">
-            <div class="service-copy">
-                <h2>Graphic Design</h2>
+        <div class="services-hero-visual" aria-hidden="true">
+            <div class="hero-orbit hero-orbit-one"></div>
+            <div class="hero-orbit hero-orbit-two"></div>
 
-                <p>
-                    Professional branding and marketing visuals.
-                </p>
+            <article class="hero-service-card hero-service-web">
+                <span class="hero-service-tag tag-web">Web Design</span>
+                <div class="hero-service-head">
+                    <div>
+                        <h3>Modern Websites<br>That Convert.</h3>
+                        <p>View Service →</p>
+                    </div>
+                    <div class="hero-browser-thumb">
+                        <img src="Service Img/1.jpg" alt="">
+                    </div>
+                </div>
+            </article>
 
-                <ul class="service-list">
-                    <li>Logo Design</li>
-                    <li>Posters</li>
-                    <li>Flyers</li>
-                    <li>Social Media Graphics</li>
-                </ul>
-            </div>
+            <article class="hero-service-card hero-service-brand">
+                <span class="hero-service-tag tag-brand">Graphic Design</span>
+                <div class="hero-brand-copy">
+                    <h3>Brands That<br>Leave A Mark.</h3>
+                    <p>View Service →</p>
+                </div>
+                <div class="hero-brand-tile">
+                    <span>E</span>
+                    <small>ELEVATE</small>
+                    <b>CONSULTING</b>
+                </div>
+            </article>
 
-            <div class="service-image">
-                <img src="Service Img/2.jpg" alt="Graphic Design">
-            </div>
+            <article class="hero-service-card hero-service-video">
+                <span class="hero-service-tag tag-video">Video Editing</span>
+                <h3>Stories That<br>Connect.</h3>
+                <p>Play Video →</p>
+                <div class="hero-video-thumb">
+                    <img src="Service Img/3.jpg" alt="">
+                    <span class="video-play">▶</span>
+                </div>
+            </article>
         </div>
-    </div>
+    </section>
 
-    <div class="service-item">
-        <div class="service-inner">
-            <div class="service-image">
-                <img src="Service Img/3.jpg" alt="Video Editing">
-            </div>
+    <section class="services-grid-section" aria-labelledby="services-grid-title">
+        <h2 id="services-grid-title" class="sr-only">Our services</h2>
+        <div class="services-grid">
+            <article class="service-card" id="service-web-design">
+                <div class="service-card-media">
+                    <img src="Service Img/1.jpg" alt="Website design service preview">
+                </div>
+                <div class="service-card-body">
+                    <span class="service-tag tag-web">Web Design</span>
+                    <h3>Web Design</h3>
+                    <p>Modern, responsive websites designed to elevate your brand, work smoothly on every screen, and turn visitors into clients.</p>
+                    <ul class="service-card-points">
+                        <li>Responsive layouts</li>
+                        <li>Contact forms</li>
+                        <li>Business and portfolio sites</li>
+                    </ul>
+                </div>
+            </article>
 
-            <div class="service-copy">
-                <h2>Video Editing</h2>
+            <article class="service-card" id="service-graphic-design">
+                <div class="service-card-media">
+                    <img src="Service Img/2.jpg" alt="Graphic design service preview">
+                </div>
+                <div class="service-card-body">
+                    <span class="service-tag tag-graphic">Graphic Design</span>
+                    <h3>Graphic Design</h3>
+                    <p>Eye-catching visuals that communicate your message clearly and give your business a consistent, professional look.</p>
+                    <ul class="service-card-points">
+                        <li>Logos and brand assets</li>
+                        <li>Flyers and posters</li>
+                        <li>Social media graphics</li>
+                    </ul>
+                </div>
+            </article>
 
-                <p>
-                    Engaging edits designed to capture attention.
-                </p>
+            <article class="service-card" id="service-video-editing">
+                <div class="service-card-media">
+                    <img src="Service Img/3.jpg" alt="Video editing service preview">
+                </div>
+                <div class="service-card-body">
+                    <span class="service-tag tag-video">Video Editing</span>
+                    <h3>Video Editing</h3>
+                    <p>Professional video edits with clean pacing, transitions, text, and sound to keep your audience engaged.</p>
+                    <ul class="service-card-points">
+                        <li>Reels and TikTok videos</li>
+                        <li>YouTube content</li>
+                        <li>Promotional videos</li>
+                    </ul>
+                </div>
+            </article>
 
-                <ul class="service-list">
-                    <li>Reels</li>
-                    <li>TikTok Videos</li>
-                    <li>YouTube Content</li>
-                    <li>Promotional Videos</li>
-                </ul>
-            </div>
+            <article class="service-card" id="service-cv-creation">
+                <div class="service-card-media cv-service-media">
+                    <img src="Service Img/4.jpg" alt="CV creation service preview">
+                </div>
+                <div class="service-card-body">
+                    <span class="service-tag tag-cv">CV Creation</span>
+                    <h3>CV Creation</h3>
+                    <p>Professional CVs that organise your experience clearly, highlight your strengths, and improve your first impression.</p>
+                    <ul class="service-card-points">
+                        <li>Modern layouts</li>
+                        <li>ATS-friendly structure</li>
+                        <li>Student and professional CVs</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="service-card" id="service-website-management">
+                <div class="service-card-media management-media">
+                    <img src="Assets/Maintenance.jpg" alt="Website management service preview">
+                </div>
+                <div class="service-card-body">
+                    <span class="service-tag tag-management">Website Management</span>
+                    <h3>Website Management</h3>
+                    <p>Ongoing support that keeps your website updated, secure, backed up, and performing properly after launch.</p>
+                    <ul class="service-card-points">
+                        <li>Content updates</li>
+                        <li>Security checks</li>
+                        <li>Backups and monitoring</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="service-card" id="service-hosting">
+                <div class="service-card-media hosting-media">
+                    <img src="Assets/Host.jpg" alt="Website hosting service preview">
+                </div>
+                <div class="service-card-body">
+                    <span class="service-tag tag-hosting">Website Hosting</span>
+                    <h3>Website Hosting</h3>
+                    <p>Reliable hosting and domain support that keeps your website online, protected, and available to customers.</p>
+                    <ul class="service-card-points">
+                        <li>SSL setup</li>
+                        <li>Uptime support</li>
+                        <li>Domain and DNS assistance</li>
+                    </ul>
+                </div>
+            </article>
         </div>
-    </div>
+    </section>
 
-    <div class="service-item right">
-        <div class="service-inner">
-            <div class="service-copy">
-                <h2>CV Creation</h2>
-
-                <p>
-                    Professional CVs that help you stand out.
-                </p>
-
-                <ul class="service-list">
-                    <li>Modern Layouts</li>
-                    <li>ATS Friendly</li>
-                    <li>Student CVs</li>
-                    <li>Professional CVs</li>
-                </ul>
+    <section class="services-process" aria-labelledby="process-title">
+        <h2 id="process-title" class="sr-only">How we work</h2>
+        <article class="process-step">
+            <span class="process-icon">⌕</span>
+            <div>
+                <h3>1. Discover</h3>
+                <p>We learn about your brand, your goals, and the audience you want to reach.</p>
             </div>
-
-            <div class="service-image">
-                <img src="Service Img/4.jpg" alt="CV Creation">
+        </article>
+        <span class="process-arrow">····→</span>
+        <article class="process-step">
+            <span class="process-icon">✎</span>
+            <div>
+                <h3>2. Design</h3>
+                <p>We build creative solutions tailored to your business, style, and message.</p>
             </div>
+        </article>
+        <span class="process-arrow">····→</span>
+        <article class="process-step">
+            <span class="process-icon">🚀</span>
+            <div>
+                <h3>3. Deliver</h3>
+                <p>We launch, refine, and support your project so it delivers real results.</p>
+            </div>
+        </article>
+    </section>
+
+    <section class="service-packages" aria-labelledby="packages-title">
+        <h2 id="packages-title" class="sr-only">Service packages</h2>
+
+        <article class="package-card">
+            <div class="package-icon">✦</div>
+            <h3>Starter</h3>
+            <p>Perfect for startups, students, and individuals getting started online.</p>
+            <ul>
+                <li>One page website or simple design project</li>
+                <li>Clean modern layout</li>
+                <li>Contact setup or basic brand support</li>
+            </ul>
+            <strong>From R2,500</strong>
+        </article>
+
+        <article class="package-card package-featured">
+            <div class="package-badge">Most Popular</div>
+            <div class="package-icon">▣</div>
+            <h3>Business</h3>
+            <p>Ideal for growing businesses that need a stronger online presence.</p>
+            <ul>
+                <li>Custom website design</li>
+                <li>Up to 5 pages or a fuller design package</li>
+                <li>Basic SEO setup and 1 month support</li>
+            </ul>
+            <strong>From R6,500</strong>
+        </article>
+
+        <article class="package-card">
+            <div class="package-icon">☆</div>
+            <h3>Custom</h3>
+            <p>Tailored solutions for businesses with unique goals and bigger project needs.</p>
+            <ul>
+                <li>Advanced features and custom deliverables</li>
+                <li>Integrations, strategy, and ongoing support</li>
+                <li>Flexible scope based on your needs</li>
+            </ul>
+            <a href="Contact Page.html">Get a Quote <span>→</span></a>
+        </article>
+    </section>
+
+    <section class="services-cta" aria-labelledby="services-cta-title">
+        <div>
+            <p>✦ Ready to grow your brand?</p>
+            <h2 id="services-cta-title">Let’s build your next project</h2>
+            <span>Have a project in mind? We’d love to hear about it and help bring your ideas to life with creativity and precision.</span>
         </div>
+        <a href="Contact Page.html" class="services-cta-button">Get in Touch <b>→</b></a>
+        <div class="rocket-art" aria-hidden="true">🚀<i></i><i></i><i></i></div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-brand">
+        <img src="Assets/Gen.png" alt="NextGen Creatives">
+        <p>NextGen Creatives helps businesses stand out with modern design, engaging content, and smart solutions.</p>
     </div>
 
-    <div class="service-item">
-        <div class="service-inner">
-            <div class="service-image">
-                <img src="Assets/Maintenance.jpg" alt="Website Maintenance">
-            </div>
+    <div class="footer-column">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="About Us.html">About Us</a>
+        <a href="Services.html">Services</a>
+        <a href="Portfolio.html">Portfolio</a>
+        <a href="Contact Page.html">Contact</a>
+    </div>
 
-            <div class="service-copy">
-                <h2>Website Maintenance</h2>
+    <div class="footer-column">
+        <h3>Services</h3>
+        <a href="#service-web-design">Web Design</a>
+        <a href="#service-graphic-design">Graphic Design</a>
+        <a href="#service-video-editing">Video Editing</a>
+        <a href="#service-cv-creation">CV Creation</a>
+        <a href="#service-website-management">Website Management</a>
+    </div>
 
-                <p>
-                    Keep your website secure, updated, and running smoothly after launch.
-                </p>
-
-                <ul class="service-list">
-                    <li>Content updates</li>
-                    <li>Security & software updates</li>
-                    <li>Performance monitoring</li>
-                    <li>Monthly backups</li>
-                </ul>
-            </div>
+    <div class="footer-column footer-social">
+        <h3>Follow Us</h3>
+        <div class="social-links" aria-label="Social links">
+            <a href="https://www.instagram.com/nextgencreatives.za/" target="_blank" rel="noopener noreferrer" aria-label="Follow NextGen Creatives on Instagram" title="Instagram">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <circle cx="17.4" cy="6.6" r="1"></circle>
+                </svg>
+            </a>
         </div>
+        <p>© 2026 NextGen Creatives.<br>All rights reserved.</p>
     </div>
-
-    <div class="service-item right">
-        <div class="service-inner">
-            <div class="service-copy">
-                <h2>Website Hosting</h2>
-
-                <p>
-                    Reliable hosting and domain care so your site stays online without interruptions.
-                </p>
-
-                <ul class="service-list">
-                    <li>Managed web hosting</li>
-                    <li>SSL certificate setup</li>
-                    <li>Uptime monitoring</li>
-                    <li>DNS & domain support</li>
-                </ul>
-            </div>
-
-            <div class="service-image">
-                <img src="Assets/Host.jpg" alt="Website Hosting">
-            </div>
-        </div>
-    </div>
-</section>
-
-<div class="service-banner">
-    <div class="service-track">
-        <span>WEBSITE DESIGN</span><span>•</span>
-        <span>GRAPHIC DESIGN</span><span>•</span>
-        <span>VIDEO EDITING</span><span>•</span>
-        <span>CV CREATION</span><span>•</span>
-        <span>LOGO DESIGN</span><span>•</span>
-        <span>SOCIAL MEDIA POSTS</span><span>•</span>
-    </div>
-</div>
+</footer>
 
 <script src="script.js"></script>
 </body>

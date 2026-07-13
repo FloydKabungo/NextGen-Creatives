@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Website Management - NextGen Creatives</title>
+    <title>Website Management &amp; Hosting - NextGen Creatives</title>
     <link rel="stylesheet" href="Style.css">
     <link rel="icon" type="image/png" href="Assets/Gen.png">
-<link rel="apple-touch-icon" href="Assets/Gen.png">
+    <link rel="apple-touch-icon" href="Assets/Gen.png">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Affordable website management and hosting plans from NextGen Creatives. Keep your website secure, updated, backed up, fast, and online.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVE3HM8TDV"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-ZVE3HM8TDV');
-</script>
-
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZVE3HM8TDV');
+    </script>
 </head>
+<body class="management-page">
+<header class="site-header">
+    <a href="index.html" class="logo-link" aria-label="NextGen Creatives home">
+        <img src="Assets/Gen.png" alt="NextGen Creatives Logo" class="logo">
+    </a>
 
-<body>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+    </button>
 
-<header>
-    <a href="index.html" class="logo-link"><img src="Assets/Gen.png" alt="NextGen Creatives Logo" class="logo"></a>
-
-    <nav>
+    <nav class="site-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="About Us.html">About Us</a>
         <a href="Services.html">Services</a>
@@ -37,325 +42,240 @@ gtag('config', 'G-ZVE3HM8TDV');
     </nav>
 </header>
 
-<section class="care-hero">
-    <div class="care-hero-copy">
-        <p class="hero-small-title">COMPLETE SOLUTIONS</p>
-        <h1>Website Management</h1>
-        <p class="hero-text">
-            Keep your website fast, secure, and performing at its best with professional hosting, maintenance,
-            analytics, and support. Everything you need in one place.
-        </p>
+<main>
+    <section class="management-hero" aria-labelledby="management-title">
+        <div class="management-hero-copy">
+            <p class="management-eyebrow">Website Management &amp; Hosting</p>
+            <h1 id="management-title">We Manage And Host<br>Your Website,<br><span>So You Can Focus<br>On Growing.</span></h1>
+            <p class="management-lead">
+                We keep your website secure, updated, backed up, fast, and always online —
+                with reliable hosting and expert care you can count on.
+            </p>
 
-        <div class="hero-actions">
-            <a href="Contact Page.html" class="btn black">Get Started</a>
-            <a href="#pricing" class="btn white">View Plans</a>
-        </div>
-    </div>
+            <div class="hero-highlights" aria-label="Website care benefits">
+                <article class="hero-highlight">
+                    <span class="icon-box" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.8 3 8.1 7 10 4-1.9 7-5.2 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-5"/></svg>
+                    </span>
+                    <div><h3>Secure &amp; Reliable</h3><p>We protect and host your website 24/7.</p></div>
+                </article>
+                <article class="hero-highlight">
+                    <span class="icon-box" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="m13 2-2 7h6l-8 13 2-9H5l8-11Z"/></svg>
+                    </span>
+                    <div><h3>Always Up to Date</h3><p>Updates, backups, and maintenance handled.</p></div>
+                </article>
+                <article class="hero-highlight">
+                    <span class="icon-box" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M4 18v-5M10 18V9M16 18V5M22 18V2"/></svg>
+                    </span>
+                    <div><h3>Blazing Fast</h3><p>Optimized for speed and performance.</p></div>
+                </article>
+                <article class="hero-highlight">
+                    <span class="icon-box" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><path d="M4 14h3v6H5a1 1 0 0 1-1-1v-5ZM20 14h-3v6h2a1 1 0 0 0 1-1v-5Z"/><path d="M17 20c0 1.1-1.8 2-4 2"/></svg>
+                    </span>
+                    <div><h3>Expert Support</h3><p>Real people and reliable support.</p></div>
+                </article>
+            </div>
 
-    <div class="care-hero-panel">
-        <div class="domain-help-card">
-            <p class="domain-help-label">Need a Domain?</p>
-            <h3>Domain registration & connection support</h3>
-            <p>We can help you register and connect your domain, including .co.za, .com, .net, and more.</p>
-            <a href="Contact Page.html" class="btn black">Get Domain Help</a>
-        </div>
-    </div>
-</section>
-
-<!-- HOSTING SECTION -->
-<section class="why-section">
-    <div class="section-intro">
-        <p class="section-label">Hosting</p>
-        <h2>Reliable Web Hosting & Domain Management</h2>
-    </div>
-
-    <div class="why-grid">
-        <div class="why-card">
-            <div class="why-icon">🖥️</div>
-            <h3>99.9% Uptime Guarantee</h3>
-            <p>We keep your website online and available so every visitor can access your brand without interruptions.</p>
-        </div>
-        <div class="why-card">
-            <div class="why-icon">🔒</div>
-            <h3>Safe and Secured</h3>
-            <p>SSL, backups, malware checks, and secure hosting practices help protect your website from threats.</p>
-        </div>
-        <div class="why-card">
-            <div class="why-icon">🎧</div>
-            <h3>Dedicated Support</h3>
-            <p>Fast responses and website support give you peace of mind when you need updates or fixes.</p>
-        </div>
-    </div>
-</section>
-
-<!-- MAINTENANCE SECTION -->
-<section class="page-section maintenance-section">
-    <div class="section-intro">
-        <p class="section-label">Maintenance</p>
-        <h2>Keep Your Content Fresh & Up-to-Date</h2>
-    </div>
-
-    <div class="included-grid">
-        <div class="included-card">
-            <h3>Website Updates</h3>
-            <p>Text changes, image replacements and contact detail updates handled quickly and reliably.</p>
+            <div class="hero-actions">
+                <a href="#plans" class="management-button management-button-primary">Choose a Plan <span>→</span></a>
+                <a href="Contact Page.html" class="management-button management-button-outline">Get in Touch</a>
+            </div>
         </div>
 
-        <div class="included-card">
-            <h3>Security & Performance</h3>
-            <p>Monthly backups, broken link checks, form testing, and security scans keep your site running smoothly.</p>
+        <div class="dashboard-scene" aria-label="Website management dashboard illustration">
+            <div class="dashboard-glow"></div>
+            <div class="monitor">
+                <div class="monitor-screen">
+                    <aside class="dashboard-sidebar">
+                        <strong>Dashboard</strong>
+                        <span class="active"></span>
+                        <span></span><span></span><span></span><span></span><span></span>
+                        <span class="sidebar-bottom"></span>
+                    </aside>
+
+                    <div class="dashboard-content">
+                        <h2>Dashboard</h2>
+                        <div class="dashboard-status-grid">
+                            <article><small>Website Status</small><strong><i>✓</i> Healthy</strong><p>All systems running smoothly.</p></article>
+                            <article><small>Uptime</small><strong><i>↑</i> 100%</strong><p>No downtime this month.</p></article>
+                            <article><small>Hosting</small><strong><i>☁</i> Active</strong><p>Server running optimally.</p></article>
+                        </div>
+
+                        <div class="dashboard-lower-grid">
+                            <article class="performance-card">
+                                <small>Performance</small>
+                                <div class="chart-grid">
+                                    <svg viewBox="0 0 300 120" preserveAspectRatio="none" aria-hidden="true">
+                                        <polyline points="0,96 30,72 60,84 92,59 125,70 160,49 195,58 230,31 265,42 300,16" />
+                                    </svg>
+                                </div>
+                                <div class="chart-labels"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+                            </article>
+                            <article class="backup-card">
+                                <small>Backups</small>
+                                <div class="backup-row"><span>Last Backup</span><b>☁</b></div>
+                                <strong>2 hours ago</strong>
+                                <p>Next backup in 22 hours</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="monitor-chin"></div>
+                <div class="monitor-stand"></div>
+                <div class="monitor-base"></div>
+            </div>
+            <div class="dashboard-dots" aria-hidden="true"></div>
+        </div>
+    </section>
+
+    <section class="included-section" aria-labelledby="included-title">
+        <div class="section-heading centered-heading">
+            <p class="section-eyebrow">What’s Included</p>
+            <h2 id="included-title">Complete Website Management &amp; Hosting Care</h2>
         </div>
 
-        <div class="included-card">
-            <h3>Website Health Checks</h3>
-            <p>Regular monitoring and maintenance ensure your website stays fast, secure, and functioning properly.</p>
-        </div>
-    </div>
-</section>
-
-<!-- ANALYTICS SECTION -->
-<section class="page-section analytics-section">
-    <div class="section-intro">
-        <p class="section-label">Analytics</p>
-        <h2>Understand Your Visitor Behavior</h2>
-    </div>
-
-    <div class="why-grid">
-        <div class="why-card">
-            <div class="why-icon">📊</div>
-            <h3>Traffic & Visitor Insights</h3>
-            <p>Understand where your visitors come from, which pages they use most, and how to turn traffic into leads.</p>
-        </div>
-        <div class="why-card">
-            <div class="why-icon">⚡</div>
-            <h3>Performance Tracking</h3>
-            <p>Monitor page speed, uptime, and user flow so your website performs consistently and visitors have a smooth experience.</p>
-        </div>
-        <div class="why-card">
-            <div class="why-icon">📈</div>
-            <h3>Custom Insights & Recommendations</h3>
-            <p>Receive monthly reports, conversion analysis, and actionable recommendations for improving engagement and growth.</p>
-        </div>
-    </div>
-</section>
-
-<!-- REPORTS SECTION -->
-<section class="page-section reports-section">
-    <div class="section-intro">
-        <p class="section-label">Reports</p>
-        <h2>Monthly Reports & Analysis</h2>
-    </div>
-
-    <div class="included-grid">
-        <div class="included-card">
-            <h3>Google Analytics Setup</h3>
-            <p>Professional setup and configuration of Google Analytics to track visitors, page views, and user behavior on your website.</p>
+        <div class="included-grid">
+            <article class="included-card">
+                <span class="included-icon"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.8 3 8.1 7 10 4-1.9 7-5.2 7-10V6l-7-3Z"/></svg></span>
+                <div><h3>Security Monitoring</h3><p>We monitor your website regularly to stop threats before they become a problem.</p></div>
+            </article>
+            <article class="included-card">
+                <span class="included-icon"><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.3-5.7L20 8"/><path d="M20 3v5h-5"/></svg></span>
+                <div><h3>Updates &amp; Maintenance</h3><p>We keep your website core, themes, content, and plugins updated and compatible.</p></div>
+            </article>
+            <article class="included-card">
+                <span class="included-icon"><svg viewBox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .8-7.9A6 6 0 0 0 6.3 8.7 4.5 4.5 0 0 0 7 18Z"/><path d="m9 14 3-3 3 3M12 11v8"/></svg></span>
+                <div><h3>Daily Backups</h3><p>Your website is backed up so your data stays safe and recoverable.</p></div>
+            </article>
+            <article class="included-card">
+                <span class="included-icon"><svg viewBox="0 0 24 24"><path d="M12 2v3M12 19v3M4.9 4.9 7 7M17 17l2.1 2.1M2 12h3M19 12h3M4.9 19.1 7 17M17 7l2.1-2.1"/><circle cx="12" cy="12" r="5"/></svg></span>
+                <div><h3>Uptime Monitoring</h3><p>We monitor website uptime and fix issues as quickly as possible.</p></div>
+            </article>
+            <article class="included-card">
+                <span class="included-icon"><svg viewBox="0 0 24 24"><path d="M4 15a8 8 0 1 1 16 0"/><path d="m12 11 4-3M12 15h.01"/></svg></span>
+                <div><h3>Performance Optimization</h3><p>We optimize your site for faster loading and a smoother user experience.</p></div>
+            </article>
+            <article class="included-card">
+                <span class="included-icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="6" rx="2"/><rect x="3" y="13" width="18" height="6" rx="2"/><path d="M7 8h.01M7 16h.01"/></svg></span>
+                <div><h3>Secure Hosting</h3><p>Reliable, high-speed hosting with SSL, security controls, and protection.</p></div>
+            </article>
+            <article class="included-card">
+                <span class="included-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg></span>
+                <div><h3>Domain &amp; Hosting Care</h3><p>We can manage your domain, renewals, DNS, and hosting so you do not have to.</p></div>
+            </article>
+            <article class="included-card">
+                <span class="included-icon"><svg viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><path d="M4 14h3v6H5a1 1 0 0 1-1-1v-5ZM20 14h-3v6h2a1 1 0 0 0 1-1v-5Z"/></svg></span>
+                <div><h3>Fast Expert Support</h3><p>Real people, quick responses, and expert help whenever you need it.</p></div>
+            </article>
         </div>
 
-        <div class="included-card">
-            <h3>Monthly Traffic Reports</h3>
-            <p>Receive detailed monthly reports showing visitor sources, top pages, bounce rates, and traffic trends.</p>
+        <div class="hosting-strip">
+            <span class="hosting-strip-icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="6" rx="2"/><rect x="3" y="13" width="18" height="6" rx="2"/><path d="M7 8h.01M7 16h.01"/></svg></span>
+            <strong>Hosting included in every plan — fast, secure, and managed by us.</strong>
+        </div>
+    </section>
+
+    <section class="process-section" aria-labelledby="process-title">
+        <div class="section-heading">
+            <p class="section-eyebrow">How It Works</p>
+            <h2 id="process-title">Simple &amp; Easy Process</h2>
         </div>
 
-        <div class="included-card">
-            <h3>Performance Insights</h3>
-            <p>Get actionable recommendations on how to improve website speed, user experience, and conversion rates.</p>
+        <div class="process-grid">
+            <article class="process-card">
+                <span class="step-number">1</span>
+                <span class="process-icon"><svg viewBox="0 0 24 24"><path d="M9 5h6M9 3v4M15 3v4M6 6h12v15H6z"/><path d="m9 14 2 2 4-5"/></svg></span>
+                <h3>Choose Your Plan</h3><p>Pick the plan that fits your needs and budget.</p>
+            </article>
+            <article class="process-card">
+                <span class="step-number">2</span>
+                <span class="process-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-2.8 2.8-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6v.2h-4V21a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1L4.2 17l.1-.1a1.7 1.7 0 0 0 .3-1.9A1.7 1.7 0 0 0 3 14H3v-4h.2a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9L4.4 7 7.2 4.2l.1.1a1.7 1.7 0 0 0 1.9.3A1.7 1.7 0 0 0 10 3V3h4v.2a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1L19.8 7l-.1.1a1.7 1.7 0 0 0-.3 1.9A1.7 1.7 0 0 0 21 10h.2v4H21a1.7 1.7 0 0 0-1.6 1Z"/></svg></span>
+                <h3>We Set It Up</h3><p>We take care of everything and get you fully covered.</p>
+            </article>
+            <article class="process-card">
+                <span class="step-number">3</span>
+                <span class="process-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4M7 12l3-3 2 2 4-5"/></svg></span>
+                <h3>We Manage &amp; Monitor</h3><p>We handle updates, security, backups, and performance.</p>
+            </article>
+            <article class="process-card">
+                <span class="step-number">4</span>
+                <span class="process-icon"><svg viewBox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .8-7.9A6 6 0 0 0 6.3 8.7 4.5 4.5 0 0 0 7 18Z"/><path d="M12 11v7M9 14l3-3 3 3"/></svg></span>
+                <h3>We Host &amp; Protect</h3><p>Your website is hosted securely and monitored around the clock.</p>
+            </article>
+            <article class="process-card">
+                <span class="step-number">5</span>
+                <span class="process-icon"><svg viewBox="0 0 24 24"><path d="M4 20v-5M9 20v-8M14 20v-11M19 20V5"/><path d="m4 10 5-4 5 2 6-6"/></svg></span>
+                <h3>You Focus &amp; Grow</h3><p>Your website stays healthy while you focus on your business.</p>
+            </article>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- PRICING SECTION -->
-<section class="pricing-section" id="pricing">
-    <div class="section-intro">
-        <p class="section-label">Our Management Plans</p>
-        <h2>Simple pricing for complete website management</h2>
-    </div>
-
-    <div class="pricing-grid">
-        <article class="plan-card">
-            <h3>Starter Care</h3>
-            <p class="plan-price">R199/month</p>
-            <ul>
-                <li>Text updates</li>
-                <li>Image replacements</li>
-                <li>Contact detail changes</li>
-                <li>Basic support</li>
-            </ul>
-            <a href="Contact Page.html" class="btn black">Choose Starter</a>
-        </article>
-
-        <article class="plan-card plan-featured">
-            <span class="plan-badge">Most popular</span>
-            <h3>Business Care</h3>
-            <p class="plan-price">R499/month</p>
-            <ul>
-                <li>Everything in Starter</li>
-                <li>Monthly website health check</li>
-                <li>Priority support</li>
-                <li>Security checks</li>
-                <li>Monthly backup</li>
-                <li>Broken link checks</li>
-                <li>Form testing</li>
-                <li>Google Analytics review</li>
-                <li>Monthly performance report</li>
-            </ul>
-            <a href="Contact Page.html" class="btn black">Choose Business</a>
-        </article>
-    </div>
-    <p class="pricing-note">Need something custom? Contact us for a quote.</p>
-
-    <div class="comparison-table-section">
-        <h3>Feature Comparison</h3>
-        <table class="comparison-table">
-            <thead>
-                <tr>
-                    <th>Feature</th>
-                    <th>Starter</th>
-                    <th>Business</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Text Updates</td>
-                    <td>✓</td>
-                    <td>✓</td>
-                </tr>
-                <tr>
-                    <td>Image Updates</td>
-                    <td>✓</td>
-                    <td>✓</td>
-                </tr>
-                <tr>
-                    <td>Contact Changes</td>
-                    <td>✓</td>
-                    <td>✓</td>
-                </tr>
-                <tr>
-                    <td>Priority Support</td>
-                    <td></td>
-                    <td>✓</td>
-                </tr>
-                <tr>
-                    <td>Security Checks</td>
-                    <td></td>
-                    <td>✓</td>
-                </tr>
-                <tr>
-                    <td>Monthly Backups</td>
-                    <td></td>
-                    <td>✓</td>
-                </tr>
-                <tr>
-                    <td>Broken Link Checks</td>
-                    <td></td>
-                    <td>✓</td>
-                </tr>
-                <tr>
-                    <td>Form Testing</td>
-                    <td></td>
-                    <td>✓</td>
-                </tr>
-                <tr>
-                    <td>Analytics Review</td>
-                    <td></td>
-                    <td>✓</td>
-                </tr>
-                <tr>
-                    <td>Monthly Performance Report</td>
-                    <td></td>
-                    <td>✓</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</section>
-
-<!-- ADD-ON SERVICES -->
-<section class="page-section addons-section">
-    <div class="section-intro">
-        <p class="section-label">Additional Services</p>
-        <h2>Specialized Add-Ons Available</h2>
-    </div>
-
-    <div class="pricing-grid">
-        <article class="plan-card">
-            <h3>Analytics Setup</h3>
-            <p class="plan-price">Once-Off — R499</p>
-            <ul>
-                <li>GA4 setup</li>
-                <li>Search Console setup</li>
-                <li>Verification</li>
-                <li>Dashboard configuration</li>
-            </ul>
-            <a href="Contact Page.html" class="btn black">Add Analytics</a>
-        </article>
-
-        <article class="plan-card">
-            <h3>Advanced Reporting</h3>
-            <p class="plan-price">From R299/month</p>
-            <ul>
-                <li>Everything in Setup</li>
-                <li>Monthly reports</li>
-                <li>Traffic analysis</li>
-                <li>Performance recommendations</li>
-                <li>Conversion insights</li>
-            </ul>
-            <a href="Contact Page.html" class="btn black">Add Reporting</a>
-        </article>
-    </div>
-</section>
-
-<section class="trust-section">
-    <div class="section-intro">
-        <p class="section-label">Why Choose NextGen</p>
-        <h2>Why Businesses Choose NextGen</h2>
-    </div>
-
-    <div class="trust-grid">
-        <div class="trust-card">
-            <h3>⚡ Fast Turnaround Times</h3>
-            <p>Updates and fixes handled quickly so your website stays current.</p>
+    <section class="plans-section" id="plans" aria-labelledby="plans-title">
+        <div class="plans-heading-row">
+            <div class="section-heading">
+                <p class="section-eyebrow">Choose Your Plan</p>
+                <h2 id="plans-title">Simple. Transparent. All-Inclusive.</h2>
+            </div>
+            <div class="plans-hosting-note">
+                <span><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="6" rx="2"/><rect x="3" y="13" width="18" height="6" rx="2"/><path d="M7 8h.01M7 16h.01"/></svg></span>
+                <strong>Hosting is included in both plans.</strong>
+            </div>
         </div>
-        <div class="trust-card">
-            <h3>📋 No Long Contracts</h3>
-            <p>Flexible monthly plans. Cancel anytime or upgrade as your business grows.</p>
-        </div>
-        <div class="trust-card">
-            <h3>💰 Affordable Monthly Plans</h3>
-            <p>Transparent pricing with no hidden fees. Clear value at every price point.</p>
-        </div>
-        <div class="trust-card">
-            <h3>👥 Direct Support From Our Team</h3>
-            <p>Real people, real support. No bots or automated responses.</p>
-        </div>
-        <div class="trust-card">
-            <h3>🇿🇦 Local South African Business</h3>
-            <p>Supporting local. Understanding your market and time zone.</p>
-        </div>
-    </div>
-</section>
 
-<section class="final-cta-banner">
-    <div class="final-cta-copy">
-        <h2>Focus On Your Business While We Handle The Website</h2>
-        <p>Let NextGen Creatives manage your hosting, maintenance, analytics, and performance so you can focus on what matters.</p>
-    </div>
-    <div class="cta-buttons">
-        <a href="Contact Page.html" class="btn black">Get Started Today</a>
-        <a href="Contact Page.html" class="btn white">Request a Quote</a>
-    </div>
-</section>
+        <div class="plans-grid">
+            <article class="care-plan-card">
+                <h3>Starter Care</h3>
+                <p class="care-price"><strong>R250</strong><span>/month</span></p>
+                <ul>
+                    <li>Website hosting included</li>
+                    <li>Website text updates</li>
+                    <li>Image replacements</li>
+                    <li>Contact detail changes</li>
+                    <li>Basic support</li>
+                </ul>
+                <a href="Contact Page.html" class="plan-button plan-button-outline">Choose Starter</a>
+            </article>
 
-<div class="service-banner">
-    <div class="service-track">
-        <span>WEBSITE MANAGEMENT</span><span>•</span>
-        <span>HOSTING</span><span>•</span>
-        <span>MAINTENANCE</span><span>•</span>
-        <span>ANALYTICS</span><span>•</span>
-        <span>REPORTS</span><span>•</span>
-        <span>SECURITY</span><span>•</span>
-    </div>
-</div>
+            <article class="care-plan-card care-plan-featured">
+                <span class="popular-badge">Most Popular</span>
+                <h3>Business Care</h3>
+                <p class="care-price"><strong>R450</strong><span>/month</span></p>
+                <ul>
+                    <li>Everything in Starter</li>
+                    <li>Monthly website health check</li>
+                    <li>Priority support</li>
+                    <li>Security checks</li>
+                    <li>Monthly backup</li>
+                    <li>Broken link checks</li>
+                    <li>Form testing</li>
+                    <li>Google Analytics review</li>
+                    <li>Monthly performance report</li>
+                </ul>
+                <a href="Contact Page.html" class="plan-button plan-button-primary">Choose Business</a>
+            </article>
+        </div>
+    </section>
+
+    <section class="management-cta" aria-labelledby="management-cta-title">
+        <div class="cta-icon"><svg viewBox="0 0 24 24"><path d="M9 5h6M9 3v4M15 3v4M6 6h12v15H6z"/><path d="m9 14 2 2 4-5"/></svg></div>
+        <div class="cta-copy">
+            <h2 id="management-cta-title">Ready To Let Us Manage &amp; Host Your Website?</h2>
+            <p>We’ll keep it secure, fast, backed up, and always up to date.</p>
+        </div>
+        <a href="Contact Page.html" class="cta-button">Get in Touch Today <span>→</span></a>
+    </section>
+</main>
+
+<footer class="management-footer">
+    <p>Follow Us On Instagram</p>
+    <a href="https://www.instagram.com/nextgencreatives.za/" target="_blank" rel="noopener noreferrer" aria-label="Follow NextGen Creatives on Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1"/></svg>
+        <span>@nextgencreatives.za</span>
+    </a>
+</footer>
 
 <script src="script.js"></script>
 </body>

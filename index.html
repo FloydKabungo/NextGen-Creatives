@@ -1,34 +1,38 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="3mcsHD581Vxi68biPp2EYa5l5ShmTWvt1Y7aA4XOEqM" />
-    <title>NextGen Creatives | Websites, Branding, Video Editing & CV Design</title>
+    <title>NextGen Creatives | Websites, Branding, Video Editing &amp; CV Design</title>
     <link rel="stylesheet" href="Style.css">
     <link rel="icon" type="image/png" href="Assets/Gen.png">
     <link rel="apple-touch-icon" href="Assets/Gen.png">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NextGen Creatives builds modern websites, designs brands, edits videos, creates professional CVs, and provides website hosting and management.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVE3HM8TDV"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-ZVE3HM8TDV');
-</script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVE3HM8TDV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZVE3HM8TDV');
+    </script>
 </head>
+<body class="home-page">
+<header class="site-header">
+    <a href="index.html" class="logo-link" aria-label="NextGen Creatives home">
+        <img src="Assets/Gen.png" alt="NextGen Creatives Logo" class="logo">
+    </a>
 
-<body>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+    </button>
 
-<header>
-    <a href="index.html" class="logo-link"><img src="Assets/Gen.png" alt="NextGen Creatives Logo" class="logo"></a>
-
-    <nav>
+    <nav class="site-nav" aria-label="Main navigation">
         <a href="index.html" class="active">Home</a>
         <a href="About Us.html">About Us</a>
         <a href="Services.html">Services</a>
@@ -38,51 +42,276 @@ gtag('config', 'G-ZVE3HM8TDV');
     </nav>
 </header>
 
-<section class="hero">
-    <p class="intro">We are NextGen Creatives</p>
+<main>
+    <section class="home-hero" aria-labelledby="home-title">
+        <div class="home-hero-copy">
+            <p class="home-eyebrow">We are NextGen Creatives</p>
+            <h1 id="home-title" class="home-hero-title" aria-label="We build websites and design brands">
+                <span>WE BUILD</span>
+                <span>WEBSITES &amp;</span>
+                <span>DESIGN BRANDS</span>
+            </h1>
 
-    <div class="image-slider">
-        <div class="image-track">
-            <img src="Assets/PICTURE1.jpg" alt="">
-            <img src="Assets/PICTURE2.jpg" alt="">
-            <img src="Assets/PICTURE3.jpg" alt="">
-            <img src="Assets/PICTURE4.png" alt="">
-            <img src="Assets/PICTURE5.jpg" alt="">
-            <img src="Assets/PICTURE1.jpg" alt="">
-            <img src="Assets/PICTURE2.jpg" alt="">
-            <img src="Assets/PICTURE3.jpg" alt="">
-            <img src="Assets/PICTURE4.png" alt="">
-            <img src="Assets/PICTURE5.jpg" alt="">
+            <p class="home-lead">
+                A two-person creative team helping students, creators, and businesses grow through
+                modern websites, strong branding, video editing, professional CVs, and reliable website care.
+            </p>
+
+            <div class="home-actions">
+                <a href="Portfolio.html" class="home-button primary">View Our Work <b>→</b></a>
+                <a href="Contact Page.html" class="home-button secondary">Start a Project</a>
+            </div>
+
+            <div class="home-proof" aria-label="NextGen Creatives strengths">
+                <article>
+                    <span>02</span>
+                    <div><strong>Creative Partners</strong><small>Floyd &amp; Sean</small></div>
+                </article>
+                <article>
+                    <span>06+</span>
+                    <div><strong>Digital Services</strong><small>One creative team</small></div>
+                </article>
+                <article>
+                    <span>100%</span>
+                    <div><strong>Built with Purpose</strong><small>Designed around your goals</small></div>
+                </article>
+            </div>
+        </div>
+
+        <div class="home-hero-visual" aria-label="Selected NextGen Creatives work">
+            <div class="home-orbit orbit-one" aria-hidden="true"></div>
+            <div class="home-orbit orbit-two" aria-hidden="true"></div>
+            <div class="home-dot-field" aria-hidden="true"></div>
+
+            <article class="home-browser-card">
+                <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>nextgencreatives.net.za</span></div>
+                <div class="browser-preview">
+                    <img src="PORTFOLIO/FMSA-homepage.png" alt="FREEBASE Multi Sector Africa website project">
+                </div>
+                <div class="browser-caption">
+                    <span>Featured Website</span>
+                    <strong>FREEBASE Multi Sector Africa</strong>
+                </div>
+            </article>
+
+            <article class="floating-card floating-design">
+                <img src="Assets/PICTURE2.jpg" alt="Brand design example">
+                <div><span>Graphic Design</span><strong>Visuals that stand out</strong></div>
+            </article>
+
+            <article class="floating-card floating-video">
+                <img src="Assets/PICTURE3.jpg" alt="Video editing example">
+                <div><span>Video Editing</span><strong>Stories that connect</strong></div>
+            </article>
+        </div>
+    </section>
+
+    <section class="home-image-marquee" aria-label="A rolling selection of NextGen Creatives work">
+        <div class="home-image-track">
+            <figure><img src="Assets/PICTURE1.jpg" alt="NextGen Creatives project example"><figcaption>Creative Direction</figcaption></figure>
+            <figure><img src="Assets/PICTURE2.jpg" alt="NextGen Creatives branding example"><figcaption>Brand Design</figcaption></figure>
+            <figure><img src="Assets/PICTURE3.jpg" alt="NextGen Creatives website example"><figcaption>Web Experiences</figcaption></figure>
+            <figure><img src="Assets/PICTURE4.png" alt="NextGen Creatives visual design example"><figcaption>Digital Content</figcaption></figure>
+            <figure><img src="Assets/PICTURE5.jpg" alt="NextGen Creatives creative project"><figcaption>Modern Solutions</figcaption></figure>
+
+            <figure aria-hidden="true"><img src="Assets/PICTURE1.jpg" alt=""><figcaption>Creative Direction</figcaption></figure>
+            <figure aria-hidden="true"><img src="Assets/PICTURE2.jpg" alt=""><figcaption>Brand Design</figcaption></figure>
+            <figure aria-hidden="true"><img src="Assets/PICTURE3.jpg" alt=""><figcaption>Web Experiences</figcaption></figure>
+            <figure aria-hidden="true"><img src="Assets/PICTURE4.png" alt=""><figcaption>Digital Content</figcaption></figure>
+            <figure aria-hidden="true"><img src="Assets/PICTURE5.jpg" alt=""><figcaption>Modern Solutions</figcaption></figure>
+        </div>
+    </section>
+
+    <section class="home-services" aria-labelledby="home-services-title">
+        <div class="home-section-heading">
+            <div>
+                <p class="home-section-eyebrow">What We Do</p>
+                <h2 id="home-services-title">Everything your brand needs to move forward.</h2>
+            </div>
+            <p>From your first idea to launch and ongoing support, we create practical digital solutions that look professional and work properly.</p>
+        </div>
+
+        <div class="home-services-grid">
+            <article class="home-service-card">
+                <span class="home-service-number">01</span>
+                <div class="home-service-icon">⌘</div>
+                <h3>Website Design</h3>
+                <p>Modern, responsive websites built to present your business clearly and turn visitors into enquiries.</p>
+                <a href="Services.html">Explore Service <span>→</span></a>
+            </article>
+
+            <article class="home-service-card">
+                <span class="home-service-number">02</span>
+                <div class="home-service-icon">✦</div>
+                <h3>Graphic Design</h3>
+                <p>Logos, posters, flyers, social media graphics, and visual assets that strengthen your brand.</p>
+                <a href="Services.html">Explore Service <span>→</span></a>
+            </article>
+
+            <article class="home-service-card">
+                <span class="home-service-number">03</span>
+                <div class="home-service-icon">▶</div>
+                <h3>Video Editing</h3>
+                <p>Promotional videos, reels, and social content edited to capture attention and communicate your story.</p>
+                <a href="Services.html">Explore Service <span>→</span></a>
+            </article>
+
+            <article class="home-service-card">
+                <span class="home-service-number">04</span>
+                <div class="home-service-icon">▤</div>
+                <h3>CV Creation</h3>
+                <p>Clean, professional CVs that present your experience, strengths, and skills with confidence.</p>
+                <a href="Services.html">Explore Service <span>→</span></a>
+            </article>
+
+            <article class="home-service-card">
+                <span class="home-service-number">05</span>
+                <div class="home-service-icon">◎</div>
+                <h3>Branding</h3>
+                <p>A consistent visual direction that gives your business a memorable and professional identity.</p>
+                <a href="Services.html">Explore Service <span>→</span></a>
+            </article>
+
+            <article class="home-service-card home-service-featured">
+                <span class="home-service-number">06</span>
+                <div class="home-service-icon">☁</div>
+                <h3>Management &amp; Hosting</h3>
+                <p>Reliable hosting, updates, backups, security, performance checks, and ongoing website support.</p>
+                <a href="Website Management.html">View Care Plans <span>→</span></a>
+            </article>
+        </div>
+    </section>
+
+    <section class="home-work" aria-labelledby="home-work-title">
+        <div class="home-section-heading">
+            <div>
+                <p class="home-section-eyebrow">Selected Work</p>
+                <h2 id="home-work-title">A small look at what we create.</h2>
+            </div>
+            <a href="Portfolio.html" class="home-text-link">View Full Portfolio <span>→</span></a>
+        </div>
+
+        <div class="home-work-grid">
+            <article class="home-work-card home-work-wide">
+                <div class="home-work-media">
+                    <img src="PORTFOLIO/FMSA-homepage.png" alt="FREEBASE Multi Sector Africa website homepage">
+                </div>
+                <div class="home-work-copy">
+                    <span>Website Design</span>
+                    <h3>FREEBASE Multi Sector Africa</h3>
+                    <p>A responsive corporate website built to present a wide range of technical and professional services.</p>
+                    <a href="https://floydkabungo.github.io/FREEBASE-MULTI-SECTOR-AFRICA-PTY-LTD/" target="_blank" rel="noopener noreferrer">View Live Website <b>→</b></a>
+                </div>
+            </article>
+
+            <article class="home-work-card">
+                <div class="home-work-media home-video-media">
+                    <video autoplay muted loop playsinline preload="metadata">
+                        <source src="PORTFOLIO/FINAL PRODUCT.mp4" type="video/mp4">
+                    </video>
+                    <span class="home-play">▶</span>
+                </div>
+                <div class="home-work-copy">
+                    <span>Video Editing</span>
+                    <h3>Magazine Promotion</h3>
+                    <p>A bold promotional edit created for an upcoming magazine release.</p>
+                </div>
+            </article>
+
+            <article class="home-work-card">
+                <div class="home-work-media home-cv-media">
+                    <img src="PORTFOLIO/CV_page.jpg" alt="Professional CV design">
+                </div>
+                <div class="home-work-copy">
+                    <span>CV Creation</span>
+                    <h3>Professional CV Design</h3>
+                    <p>A clean, structured CV that presents skills and experience clearly.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="home-process" aria-labelledby="home-process-title">
+        <div class="home-process-intro">
+            <p class="home-section-eyebrow">How We Work</p>
+            <h2 id="home-process-title">Simple process.<br>Strong results.</h2>
+            <p>We keep every project clear and collaborative, so you always understand what is being created and what happens next.</p>
+        </div>
+
+        <div class="home-process-steps">
+            <article><span>01</span><div><h3>Discover</h3><p>We learn about your goals, audience, style, and project requirements.</p></div></article>
+            <article><span>02</span><div><h3>Design</h3><p>We build a clean visual direction and turn your ideas into a focused solution.</p></div></article>
+            <article><span>03</span><div><h3>Refine</h3><p>We review the work with you and improve the details based on useful feedback.</p></div></article>
+            <article><span>04</span><div><h3>Deliver</h3><p>We launch or hand over the final work and remain available for ongoing support.</p></div></article>
+        </div>
+    </section>
+
+    <section class="home-cta" aria-labelledby="home-cta-title">
+        <div>
+            <p>✦ Ready to build your brand?</p>
+            <h2 id="home-cta-title">Let’s create something people remember.</h2>
+            <span>Tell us what you need and we will help shape it into a clean, professional, and effective digital solution.</span>
+        </div>
+        <a href="Contact Page.html" class="home-cta-button">Start Your Project <b>→</b></a>
+        <div class="home-cta-art" aria-hidden="true">🚀<i></i><i></i><i></i></div>
+    </section>
+
+    <div class="home-service-ticker" aria-label="NextGen Creatives services">
+        <div class="home-service-track">
+            <span>WEBSITE DESIGN</span><b>•</b>
+            <span>GRAPHIC DESIGN</span><b>•</b>
+            <span>VIDEO EDITING</span><b>•</b>
+            <span>CV CREATION</span><b>•</b>
+            <span>BRANDING</span><b>•</b>
+            <span>WEBSITE HOSTING</span><b>•</b>
+            <span>WEBSITE DESIGN</span><b>•</b>
+            <span>GRAPHIC DESIGN</span><b>•</b>
+            <span>VIDEO EDITING</span><b>•</b>
+            <span>CV CREATION</span><b>•</b>
+            <span>BRANDING</span><b>•</b>
+            <span>WEBSITE HOSTING</span><b>•</b>
         </div>
     </div>
+</main>
 
-    <h1 class="hero-title">
-        <span>WE BUILD</span><br>
-        <span>WEBSITES &</span><br>
-        <span>DESIGN BRANDS</span>
-    </h1>
-
-    <p class="hero-text">
-        We create modern websites, provide web hosting and maintenance, graphic designs, video edits and professional
-        CVs for students, creators and small businesses.
-    </p>
-
-    <div class="buttons">
-        <a href="Portfolio.html" class="btn black">View Our Work</a>
-        <a href="Contact Page.html" class="btn white">Contact Us</a>
+<footer class="site-footer">
+    <div class="footer-brand">
+        <img src="Assets/Gen.png" alt="NextGen Creatives">
+        <p>NextGen Creatives helps students, creators, and businesses stand out online with modern design, creative content, and smart digital solutions.</p>
     </div>
-</section>
 
-<div class="service-banner">
-    <div class="service-track">
-        <span>WEBSITE DESIGN</span><span>•</span>
-        <span>GRAPHIC DESIGN</span><span>•</span>
-        <span>VIDEO EDITING</span><span>•</span>
-        <span>CV CREATION</span><span>•</span>
-        <span>LOGO DESIGN</span><span>•</span>
-        <span>SOCIAL MEDIA POSTS</span><span>•</span>
+    <div class="footer-column">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="About Us.html">About Us</a>
+        <a href="Services.html">Services</a>
+        <a href="Portfolio.html">Portfolio</a>
+        <a href="Contact Page.html">Contact</a>
     </div>
-</div>
+
+    <div class="footer-column">
+        <h3>Services</h3>
+        <a href="Services.html">Web Design</a>
+        <a href="Services.html">Graphic Design</a>
+        <a href="Services.html">Video Editing</a>
+        <a href="Services.html">CV Creation</a>
+        <a href="Website Management.html">Website Management</a>
+    </div>
+
+    <div class="footer-column footer-social">
+        <h3>Follow Us</h3>
+        <div class="social-links" aria-label="Social links">
+            <a href="https://www.instagram.com/nextgencreatives.za/" target="_blank" rel="noopener noreferrer" aria-label="Follow NextGen Creatives on Instagram" title="Instagram">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <circle cx="17.4" cy="6.6" r="1"></circle>
+                </svg>
+            </a>
+        </div>
+        <p>© 2026 NextGen Creatives.<br>All rights reserved.</p>
+    </div>
+</footer>
 
 <script src="script.js"></script>
 </body>
