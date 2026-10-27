@@ -144,6 +144,12 @@ if (contactForm) {
             });
         });
 
-        filterButtons[0].setAttribute('aria-pressed', 'true');
+        filterButtons.forEach(function (button) {
+            button.setAttribute('aria-pressed', String(button.classList.contains('active')));
+        });
+        if (window.location.hash === '#graphic-design') {
+            const graphicFilter = document.querySelector('[data-filter="graphic-design"]');
+            if (graphicFilter) graphicFilter.click();
+        }
     }
 })();

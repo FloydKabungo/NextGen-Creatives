@@ -976,20 +976,6 @@ nav a.active {
     margin-bottom: 8px;
 }
 
-.cv-holder {
-    display: flex;
-    justify-content: center;
-}
-
-.cv-a4 {
-    width: auto !important;
-    height: 700px !important;
-    aspect-ratio: 1 / 1.414;
-    object-fit: contain !important;
-    box-shadow: 0 20px 45px rgba(0,0,0,0.12);
-    background: white;
-}
-
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1570,13 +1556,6 @@ nav a.active {
         height: auto;
         aspect-ratio: 16 / 9;
         object-fit: cover;
-    }
-
-    .cv-a4 {
-        width: 90% !important;
-        height: auto !important;
-        aspect-ratio: 1 / 1.414;
-        object-fit: contain !important;
     }
 
     .contact-panel,
@@ -2384,19 +2363,6 @@ iframe {
     box-shadow: 0 8px 20px rgba(0,0,0,0.18);
 }
 
-.portfolio-page .cv-visual {
-    padding: 15px 26px;
-    background: linear-gradient(135deg, #27354d, #65738a);
-}
-
-.portfolio-page .cv-visual img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: 5px;
-    box-shadow: 0 12px 26px rgba(0,0,0,0.18);
-}
-
 .portfolio-page .website-visual {
     background:
         radial-gradient(circle at 75% 80%, rgba(38, 112, 255, 0.24), transparent 30%),
@@ -2909,7 +2875,6 @@ iframe {
 }
 
 .portfolio-page .tag-video { background: #6b52e8; }
-.portfolio-page .tag-cv { background: #3268f5; }
 .portfolio-page .tag-web { background: #31b95f; }
 .portfolio-page .tag-brand { background: #8a50dc; }
 .portfolio-page .tag-graphic { background: #f3a21a; }
@@ -3640,7 +3605,7 @@ iframe {
 .services-page .tag-web { background: #3268f5; }
 .services-page .tag-brand { background: #f3a21a; }
 .services-page .tag-video { background: #31b95f; }
-.services-page .tag-cv { background: #6b52e8; }
+.services-page .tag-print { background: #6b52e8; }
 .services-page .tag-graphic { background: #f39c12; }
 .services-page .tag-management { background: #10b5be; }
 .services-page .tag-hosting { background: #1a8e74; }
@@ -7034,8 +6999,8 @@ iframe {
     font-size: 13px;
     box-shadow: 0 9px 20px rgba(0,0,0,0.18);
 }
-.home-page .home-cv-media { padding: 15px 28px; background: linear-gradient(135deg, #27354d, #65738a); }
-.home-page .home-cv-media img { object-fit: contain; }
+.home-page .home-graphic-media { padding: 15px 28px; background: linear-gradient(135deg, #27354d, #65738a); }
+.home-page .home-graphic-media img { object-fit: contain; }
 .home-page .home-work-copy { padding: 18px 20px 21px; }
 .home-page .home-work-copy > span { display: block; margin-bottom: 8px; color: var(--home-blue); font-size: 12px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.1em; }
 .home-page .home-work-copy h3 { margin: 0 0 8px; font-size: 25px; font-weight: 900; }
@@ -8168,4 +8133,27 @@ iframe {
     .management-page .care-price strong {
         font-size: 31px;
     }
+}
+
+
+/* Graphic design portfolio and personal portfolio links */
+.portfolio-page .graphic-design-intro { max-width: 760px; margin: 0 auto 24px; color: var(--portfolio-muted); text-align: center; line-height: 1.65; scroll-margin-top: 110px; }
+.portfolio-page .graphic-visual { display: block; padding: 12px; background: #f2f4f8; }
+.portfolio-page .graphic-visual img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.portfolio-page .graphic-logo-dark { background: #050505; }
+.portfolio-page .graphic-logo-white { background: white; }
+.portfolio-page .graphic-logo-white img { transform: scale(2); }
+.portfolio-page .tag-graphic { color: #28200a; background: #ffe3a0; }
+.services-page .print-service-media { background: #f8ede6; }
+.services-page .print-service-media img { object-fit: contain; }
+.about-page .team-portfolio-intro { max-width: 760px; margin: 0 0 26px; color: var(--about-muted); line-height: 1.65; }
+.about-page .team-portfolio-link { display: inline-flex; align-items: center; gap: 8px; margin: 4px 0 16px; color: #2255df; font-size: 15px; font-weight: 800; text-decoration: underline; text-underline-offset: 4px; }
+.team-portfolio-link:focus-visible, .graphic-visual:focus-visible { outline: 3px solid #2255df; outline-offset: 4px; }
+@media (max-width: 600px) {
+    .portfolio-page .portfolio-filters { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; overflow: visible; }
+    .portfolio-page .portfolio-filter { min-width: 0; width: 100%; padding: 12px 8px; }
+    .portfolio-page .portfolio-grid { grid-template-columns: 1fr; }
+    .portfolio-page .project-card:nth-child(3) { margin-top: 0; }
+    .portfolio-page .project-card:not(:first-child) .graphic-visual { height: 300px; }
+    .about-page .team-portfolio-link { font-size: 13px; }
 }

@@ -1,6 +1,6 @@
 # NextGen Creatives
 
-### Websites, Branding, Video Editing & CV Design
+### Websites, Branding, Video Editing & Graphic Design
 
 NextGen Creatives is a creative digital business founded by **Floyd & Sean**, providing digital and creative solutions for individuals, entrepreneurs, and businesses.
 
@@ -9,7 +9,8 @@ NextGen Creatives is a creative digital business founded by **Floyd & Sean**, pr
 * 🌐 Website Design & Development
 * 🎨 Branding & Graphic Design
 * 🎬 Video Editing
-* 📄 Professional CV Design
+* 📰 Print & Editorial Design
+* ☁ Website Management & Hosting
 
 ## About
 
@@ -29,6 +30,9 @@ We focus on creating modern, professional, and user-friendly digital experiences
 ## Founders
 
 **Floyd & Sean**
+
+* [Floyd’s portfolio](https://floydkabungo.github.io/FLOYD-PORTFOLIO/)
+* [Sean’s portfolio](https://floydkabungo.github.io/Sean-Muringani-Portfolio/)
 
 ---
 
