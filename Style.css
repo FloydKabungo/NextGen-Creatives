@@ -3605,7 +3605,6 @@ iframe {
 .services-page .tag-web { background: #3268f5; }
 .services-page .tag-brand { background: #f3a21a; }
 .services-page .tag-video { background: #31b95f; }
-.services-page .tag-print { background: #6b52e8; }
 .services-page .tag-graphic { background: #f39c12; }
 .services-page .tag-management { background: #10b5be; }
 .services-page .tag-hosting { background: #1a8e74; }
@@ -8144,8 +8143,6 @@ iframe {
 .portfolio-page .graphic-logo-white { background: white; }
 .portfolio-page .graphic-logo-white img { transform: scale(2); }
 .portfolio-page .tag-graphic { color: #28200a; background: #ffe3a0; }
-.services-page .print-service-media { background: #f8ede6; }
-.services-page .print-service-media img { object-fit: contain; }
 .about-page .team-portfolio-intro { max-width: 760px; margin: 0 0 26px; color: var(--about-muted); line-height: 1.65; }
 .about-page .team-portfolio-link { display: inline-flex; align-items: center; gap: 8px; margin: 4px 0 16px; color: #2255df; font-size: 15px; font-weight: 800; text-decoration: underline; text-underline-offset: 4px; }
 .team-portfolio-link:focus-visible, .graphic-visual:focus-visible { outline: 3px solid #2255df; outline-offset: 4px; }

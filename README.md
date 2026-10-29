@@ -9,7 +9,6 @@ NextGen Creatives is a creative digital business founded by **Floyd & Sean**, pr
 * 🌐 Website Design & Development
 * 🎨 Branding & Graphic Design
 * 🎬 Video Editing
-* 📰 Print & Editorial Design
 * ☁ Website Management & Hosting
 
 ## About
